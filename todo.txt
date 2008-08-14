@@ -1,0 +1,3 @@
+add a credits field to the beer, to put credits, license, etc. U:1 I:3 T:1H S:2008-08-14
+add sorts of beer, brands, fetch pictures on flickr, etc U:1 I:3 T:1H S:2008-08-14
+an about page/text would be nice. U:1 I:3 T:1H S:2008-08-14
