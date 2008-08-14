@@ -1,0 +1,11 @@
+[
+    {
+        "pk": "1", 
+        "model": "beers.beer", 
+        "fields": {
+            "picture": "beers\/stout.jpg", 
+            "name": "Stout", 
+            "slug": "stout"
+        }
+    }
+]
