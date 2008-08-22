@@ -5,7 +5,8 @@
         "fields": {
             "picture": "beers\/default.jpg",
             "name": "Beer",
-            "slug": "default"
+            "slug": "default",
+            "credits": "A Glass of Ayinger, by wickenden, http://flickr.com/photos/wickenden/1104589745"
         }
     },
     {
@@ -14,7 +15,8 @@
         "fields": {
             "picture": "beers\/stout.jpg",
             "name": "Stout",
-            "slug": "stout"
+            "slug": "stout",
+            "credits": "Murphy's, by adactio, http://flickr.com/photos/adactio/60443262/"
         }
     }
 ]
