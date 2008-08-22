@@ -1,16 +1,13 @@
-import os
-from django.views.generic.simple import direct_to_template
 from beers.models import Beer
-from django.conf import settings
+from django.views.generic.list_detail import object_detail
 
-def beer(request, slug='default'):
-
-    try:
-        beer = Beer.objects.get(slug=slug)
-        picture = beer.picture
-    except:
-        picture = 'beers/default.jpg'
-
-    picture = os.path.join(settings.MEDIA_URL, picture)
-
-    return direct_to_template(request, 'default.html', extra_context={'picture': picture})
+def beer_detail(request, slug):
+    if not slug:
+        slug = "default"
+    queryset = Beer.objects.order_by('slug')
+    return object_detail(request,
+        queryset = queryset,
+        slug = slug,
+        slug_field = 'slug',
+        template_object_name = 'beer',
+    )
