@@ -1,5 +1,15 @@
 from django.conf.urls.defaults import *
+from models import Beer
 
-urlpatterns = patterns('beers.views',
-    (r'^(?P<slug>\w+)?/?', 'beer'),
+info_dict = {
+    'queryset': Beer.objects.order_by('slug'),
+}
+info_dict_detail = info_dict.update({
+    'slug_field': 'slug',
+    'template_object_name': 'beer',
+})
+
+urlpatterns = patterns('django.views.generic',
+    (r'^all/?', 'list_detail.object_list', info_dict),
+    (r'^(?P<slug>\w+)?/?', 'list_detail.object_detail', info_dict),
 )

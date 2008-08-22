@@ -1,0 +1,11 @@
+{% extends "default.html" %}
+{% load i18n %}
+{% block content %}
+<h1>{% trans "The beer list" %}</h1>
+<ul>
+    <li><a href="/">{% trans "Default beer (lager)" %}</a></li>
+    {% for beer in object_list %}
+    <li><a href="{{ beer.get_absolute_url }}">{{ beer.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
