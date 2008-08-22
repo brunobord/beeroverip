@@ -5,6 +5,7 @@ class Beer(models.Model):
     name = models.CharField(_('name'), maxlength=100)
     slug = models.SlugField(_('slug'), maxlength=100, prepopulate_from=('name',))
     picture = models.ImageField(_('picture'), upload_to='beers/')
+    credits = models.TextField(_('credits'), blank=True)
 
     class Admin:
         pass
