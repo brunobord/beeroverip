@@ -1,10 +1,19 @@
 [
     {
-        "pk": "1", 
-        "model": "beers.beer", 
+        "pk": "1",
+        "model": "beers.beer",
         "fields": {
-            "picture": "beers\/stout.jpg", 
-            "name": "Stout", 
+            "picture": "beers\/default.jpg",
+            "name": "Beer",
+            "slug": "default"
+        }
+    },
+    {
+        "pk": "2",
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers\/stout.jpg",
+            "name": "Stout",
             "slug": "stout"
         }
     }

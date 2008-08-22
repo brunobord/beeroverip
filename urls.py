@@ -7,6 +7,7 @@ info_dict = {
 info_dict_detail = info_dict.update({
     'slug_field': 'slug',
     'template_object_name': 'beer',
+    'slug': 'default',
 })
 
 urlpatterns = patterns('django.views.generic',

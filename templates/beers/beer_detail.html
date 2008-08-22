@@ -3,6 +3,8 @@
 {% block content %}
 <h1>{% trans "You've just been offered..." %}</h1>
 <img src="{{ beer.get_picture_url }}" />
-{{ beer.get_picture_url }}
 <p>{% trans "a Beer over IP" %}</p>
+{% if beer.credits %}
+<p>{% trans "Credits:" %}<small>{{ beer.credits }}</small></p>
+{% endif %}
 {% endblock %}
