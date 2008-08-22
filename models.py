@@ -1,4 +1,5 @@
 from django.db import models
+import os.path
 
 class Beer(models.Model):
     name = models.CharField(_('name'), maxlength=100)
@@ -17,3 +18,7 @@ class Beer(models.Model):
 
     def get_absolute_url(self):
         return '/%s/' % self.slug
+
+    def get_picture_url(self):
+        from django.conf import settings
+        return os.path.join(settings.MEDIA_URL, self.picture)
