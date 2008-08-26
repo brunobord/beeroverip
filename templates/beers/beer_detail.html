@@ -5,6 +5,6 @@
 <img src="{{ beer.get_picture_url }}" alt="{{ beer.name }}"/>
 <p>{% trans "a Beer over IP" %}</p>
 {% if beer.credits %}
-<p><small>{% trans "Credits:" %} {{ beer.credits }}</small></p>
+<p class="copyright">{% trans "Credits:" %} {{ beer.credits }}</p>
 {% endif %}
 {% endblock %}
