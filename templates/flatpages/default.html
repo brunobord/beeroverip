@@ -1,0 +1,19 @@
+{% extends "default.html" %}
+{% load markup %}
+
+{% block styles %}
+{{ block.super }}
+<style type="text/css">
+body {
+    width: 80%;
+    text-align: left;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>{{ flatpage.title }}</h1>
+<div>
+{{ flatpage.content|markdown }}
+</div>
+{% endblock %}
