@@ -21,5 +21,18 @@
 {% endblock %}
 <div id="footer"><p><a href="/about/">{% trans "About" %}</a> | <a href="/all/">{% trans "List of all beers available" %}</a></p>
 <p class="copyright">&copy; {% now "Y" %} Bruno Bord, aka No'<br />{% trans "Pictures are property of their authors, and are usually published under a Creative Commons License." %}</p></div>
+
+{% if ANALYTICS_ID %}
+<!-- Analytics -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("{{ ANALYTICS_ID }}");
+pageTracker._trackPageview();
+</script>
+{% endif %}
 </body>
 </html>
