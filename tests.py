@@ -9,3 +9,7 @@ class TestUrls(TestCase):
     def test_home(self):
         response = self.client.get('/')
         self.assertEquals(response.status_code, 200)
+
+    def test_404(self):
+        response = self.client.get('/dehfzihfezihgzihgz/')
+        self.assertEquals(response.status_code, 404)
