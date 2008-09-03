@@ -4,7 +4,9 @@
 About Beer Styles
 =================
 
-(source: Wikipedia)
+(source: Wikipedia_)
+
+.. _Wikipedia: http://en.wikipedia.org/wiki/Beer_style
 
 By alphabetical order
 
