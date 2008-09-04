@@ -1,0 +1,112 @@
+=========================
+How to install BeerOverIP
+=========================
+
+At the moment, Beer Over IP is written for Django 0.96, which was the latest
+stable release at the time the project was started. Migration onto Django 1.0
+is planned, but not yet.
+
+Setup a Django app
+==================
+
+You must know how to create the project, right? Easy:
+
+    $ django-admin startproject website
+
+`website` is the name of the project I'm going to use all along. Of course, you
+can use another one by adapting the provided procedure to your needs.
+
+Checking out beeroverip code
+----------------------------
+
+Inside your project, type the command:
+
+    $ bzr branch lp:beeroverip beers
+
+This should download the `beers` code from trunk.
+
+Change settings
+---------------
+
+Many parameters need to be changed or added to deliver Beer Over IP. Edit your
+``settings.py`` file
+
+* Select your `database configuration`_, time zone, language, etc.
+* Define `MEDIA_URL`. This URL should point at the ``beers/media/``
+  directory which is inside your project directory (website). You may want to
+  serve it using a lightweight HTTP server. More on `static file serving`_ in the
+  Django docs.
+* Add `'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'` to your
+  `MIDDLEWARE_CLASSES` variable.
+
+
+.. _database configuration: http://www.djangoproject.com/documentation/0.96/tutorial01/#database-setup
+.. _static file serving: http://www.djangoproject.com/documentation/0.96/static_files/
+
+Template dirs
+-------------
+
+An easy way to define the template dir goes like this:
+
+    import os
+    PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+
+    TEMPLATE_DIRS = (
+        os.path.join(PROJECT_PATH, 'beers', 'templates')
+    )
+
+You may want to define it by hand. I don't care, it's whatever you want to do.
+
+
+Template context processors
+---------------------------
+
+You need them.
+
+    TEMPLATE_CONTEXT_PROCESSORS = (
+        'django.core.context_processors.auth',
+        'beers.context_processors.analytics_id',
+        'beers.context_processors.media_url',
+    )
+
+Google Analytics
+~~~~~~~~~~~~~~~~
+
+If you want to use the Google Analytics statistic module, you'll have to define
+an ANALYTICS_ID, like this:
+
+    ANALYTICS_ID = 'UA-90876-1'
+
+Don't worry, it's not a mandatory feature, even if you don't define this
+settings variable, BeerOverIP will work.
+
+Installed apps
+--------------
+
+Add these to your INSTALLED_APPS tuple:
+
+    'django.contrib.admin',
+    'django.contrib.flatpages',
+    'django.contrib.markup',
+    'beers',
+
+URLS
+====
+
+Append this to your ``urls.py`` file:
+
+    urlpatterns += patterns('',
+        (r'^', include('website.beers.urls')),
+    )
+
+
+Database stuff
+==============
+
+Everything should be ready now. Then it's a classic:
+
+    $ python manage.py syncdb
+    $ python loaddata pages data
+
+Now it's ready! You can test your website by serving it the way you want
+(embedded development server, fcgi, mod_python, etc.)
