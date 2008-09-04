@@ -9,7 +9,7 @@ is planned, but not yet.
 Setup a Django app
 ==================
 
-You must know how to create the project, right? Easy:
+You must know how to create the project, right? Easy::
 
     $ django-admin startproject website
 
@@ -19,7 +19,7 @@ can use another one by adapting the provided procedure to your needs.
 Checking out beeroverip code
 ----------------------------
 
-Inside your project, type the command:
+Inside your project, type the command::
 
     $ bzr branch lp:beeroverip beers
 
@@ -46,7 +46,7 @@ Many parameters need to be changed or added to deliver Beer Over IP. Edit your
 Template dirs
 -------------
 
-An easy way to define the template dir goes like this:
+An easy way to define the template dir goes like this::
 
     import os
     PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -63,6 +63,8 @@ Template context processors
 
 You need them.
 
+::
+
     TEMPLATE_CONTEXT_PROCESSORS = (
         'django.core.context_processors.auth',
         'beers.context_processors.analytics_id',
@@ -73,7 +75,7 @@ Google Analytics
 ~~~~~~~~~~~~~~~~
 
 If you want to use the Google Analytics statistic module, you'll have to define
-an ANALYTICS_ID, like this:
+an ANALYTICS_ID, like this::
 
     ANALYTICS_ID = 'UA-90876-1'
 
@@ -83,7 +85,7 @@ settings variable, BeerOverIP will work.
 Installed apps
 --------------
 
-Add these to your INSTALLED_APPS tuple:
+Add these to your INSTALLED_APPS tuple::
 
     'django.contrib.admin',
     'django.contrib.flatpages',
@@ -93,7 +95,7 @@ Add these to your INSTALLED_APPS tuple:
 URLS
 ====
 
-Append this to your ``urls.py`` file:
+Append this to your ``urls.py`` file::
 
     urlpatterns += patterns('',
         (r'^', include('website.beers.urls')),
@@ -103,7 +105,7 @@ Append this to your ``urls.py`` file:
 Database stuff
 ==============
 
-Everything should be ready now. Then it's a classic:
+Everything should be ready now. Then it's a classic::
 
     $ python manage.py syncdb
     $ python loaddata pages data
