@@ -5,7 +5,7 @@ from models import Beer
 class TestUrls(TestCase):
     fixtures = ['data']
     def setUp(self):
-        self.client = Client()
+        pass
 
     def test_home(self):
         response = self.client.get('/')
