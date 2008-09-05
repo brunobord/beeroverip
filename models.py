@@ -23,4 +23,4 @@ class Beer(models.Model):
 
     def get_picture_url(self):
         from django.conf import settings
-        return os.path.join(settings.MEDIA_URL, self.picture)
+        return os.path.join(settings.MEDIA_URL, self.picture.url)
