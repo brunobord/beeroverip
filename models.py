@@ -1,9 +1,10 @@
 from django.db import models
+from django.utils.translation import ugettext as _
 import os.path
 
 class Beer(models.Model):
-    name = models.CharField(_('name'), maxlength=100)
-    slug = models.SlugField(_('slug'), maxlength=100, prepopulate_from=('name',))
+    name = models.CharField(_('name'), max_length=100)
+    slug = models.SlugField(_('slug'), max_length=100)
     picture = models.ImageField(_('picture'), upload_to='beers/', blank=True)
     credits = models.TextField(_('credits'), blank=True)
 
@@ -14,7 +15,7 @@ class Beer(models.Model):
         verbose_name = _('beer')
         verbose_name_plural = _('beers')
 
-    def __str__(self):
+    def __unicode__(self):
         return self.name
 
     def get_absolute_url(self):
