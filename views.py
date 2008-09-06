@@ -11,3 +11,7 @@ def beer_detail(request, slug):
         slug_field = 'slug',
         template_object_name = 'beer',
     )
+
+def beer_random(request):
+    random_beer = Beer.objects.order_by('?')[0]
+    return beer_detail(request, random_beer.slug)
