@@ -68,7 +68,6 @@ You need them.
     TEMPLATE_CONTEXT_PROCESSORS = (
         'django.core.context_processors.auth',
         'beers.context_processors.analytics_id',
-        'beers.context_processors.media_url',
     )
 
 Google Analytics
