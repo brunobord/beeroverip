@@ -6,5 +6,6 @@
     {% for beer in object_list %}
     <li><a href="{{ beer.get_absolute_url }}">{{ beer.name }}</a></li>
     {% endfor %}
+    <li><em>{% trans "Special feature:" %}</em> <a href="/random/">{% trans "Random" %}</a></li>
 </ul>
 {% endblock %}
