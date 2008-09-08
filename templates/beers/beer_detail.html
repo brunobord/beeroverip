@@ -1,10 +1,13 @@
 {% extends "default.html" %}
 {% load i18n %}
 {% block content %}
-<h1>{% trans "You've just been offered..." %}</h1>
-<img src="{{ beer.picture.url }}" alt="{{ beer.name }}"/>
-<p>{% trans "a Beer over IP" %}, {% ifnotequal beer.slug "default" %}{% blocktrans %}more precisely a <em>{{ beer }}</em>{% endblocktrans %}{% endifnotequal %}</p>
+
+    <h1>{% trans "You've just been offered..." %}</h1>
+    <img src="{{ beer.picture.url }}" alt="{{ beer.name }}"/>
+    <p>{% trans "a Beer over IP" %}, {% ifnotequal beer.slug "default" %}{% blocktrans %}more precisely a <em>{{ beer }}</em>{% endblocktrans %}{% endifnotequal %}</p>
+
 {% if beer.credits %}
-<p class="copyright">{% trans "Credits:" %} {{ beer.credits }}</p>
+    <p class="copyright">{% trans "Credits:" %} {{ beer.credits }}</p>
 {% endif %}
+
 {% endblock %}
