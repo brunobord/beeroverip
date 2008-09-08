@@ -1,5 +1,8 @@
 {% extends "default.html" %}
 {% load i18n %}
+
+{% block title %}{{ block.super }} - {{ beer.name }}{% endblock %}
+
 {% block content %}
 
     <h1>{% trans "You've just been offered..." %}</h1>
