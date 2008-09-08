@@ -18,7 +18,7 @@ class TestUrls(TestCase):
     def test_media_files(self):
         for beer in Beer.objects.all():
             self.assertNotEquals(beer.picture, "")
-            response = self.client.get(beer.get_picture_url())
+            response = self.client.get(beer.picture.url)
             self.assertEquals(response.status_code, 200)
 
     def test_data(self):
