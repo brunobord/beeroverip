@@ -48,5 +48,15 @@
             "name": "Tripel",
             "slug": "tripel"
         }
+    },
+    {
+        "pk": "6",
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers\/maudite.jpg",
+            "credits": "Maudite, by Pierre Roussel, Creative Commons licensed, CC-BY",
+            "name": "Maudite",
+            "slug": "maudite"
+        }
     }
 ]
