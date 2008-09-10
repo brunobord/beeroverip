@@ -1,62 +1,62 @@
 [
     {
-        "pk": "1",
+        "pk": 1,
         "model": "beers.beer",
         "fields": {
-            "picture": "beers\/default.jpg",
-            "credits": "A Glass of Ayinger, by wickenden, http:\/\/flickr.com\/photos\/wickenden\/1104589745",
+            "picture": "beers/default.jpg",
+            "credits": "A Glass of Ayinger, by wickenden, http://flickr.com/photos/wickenden/1104589745",
             "name": "Beer",
             "slug": "default"
         }
     },
     {
-        "pk": "2",
+        "pk": 2,
         "model": "beers.beer",
         "fields": {
-            "picture": "beers\/stout.jpg",
-            "credits": "Murphy's, by adactio, http:\/\/flickr.com\/photos\/adactio\/60443262\/",
+            "picture": "beers/stout.jpg",
+            "credits": "Murphy's, by adactio, http://flickr.com/photos/adactio/60443262/",
             "name": "Stout",
             "slug": "stout"
         }
     },
     {
-        "pk": "3",
+        "pk": 3,
         "model": "beers.beer",
         "fields": {
-            "picture": "beers\/dubbel.jpg",
-            "credits": "Allagash Dubbel Ale, by MontageMan, http:\/\/www.flickr.com\/photos\/montage_man\/2178721155\/",
+            "picture": "beers/dubbel.jpg",
+            "credits": "Allagash Dubbel Ale, by MontageMan, http://www.flickr.com/photos/montage_man/2178721155/",
             "name": "Dubbel",
             "slug": "dubbel"
         }
     },
     {
-        "pk": "4",
+        "pk": 4,
         "model": "beers.beer",
         "fields": {
-            "picture": "beers\/gueuze.jpg",
-            "credits": "Belle-Vue Gueuze, by H4NUM4N, http:\/\/www.flickr.com\/photos\/hanuman\/682378582\/",
+            "picture": "beers/gueuze.jpg",
+            "credits": "Belle-Vue Gueuze, by H4NUM4N, http://www.flickr.com/photos/hanuman/682378582/",
             "name": "Gueuze",
             "slug": "gueuze"
         }
     },
     {
-        "pk": "5",
+        "pk": 5,
         "model": "beers.beer",
         "fields": {
-            "picture": "beers\/tripel.jpg",
-            "credits": "Maredsous Triple, by kapital, http:\/\/flickr.com\/photos\/kapital\/2371953228\/",
+            "picture": "beers/tripel.jpg",
+            "credits": "Maredsous Triple, by kapital, http://flickr.com/photos/kapital/2371953228/",
             "name": "Tripel",
             "slug": "tripel"
         }
     },
     {
-        "pk": "6",
+        "pk": 6,
         "model": "beers.beer",
         "fields": {
-            "picture": "beers\/maudite.jpg",
-            "credits": "Maudite, by Pierre Roussel, Creative Commons licensed, CC-BY",
-            "name": "Maudite",
-            "slug": "maudite"
+            "picture": "beers/guinness.jpg",
+            "credits": "Guinness pint, by coda, http://flickr.com/photos/coda/61991984/",
+            "name": "Guinness",
+            "slug": "guinness"
         }
     }
 ]
