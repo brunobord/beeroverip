@@ -24,6 +24,8 @@ class TestUrls(TestCase):
     def test_data(self):
         for beer in Beer.objects.all():
             response = self.client.get(beer.get_absolute_url())
+            if response.status_code != 200:
+                print beer
             self.assertEquals(response.status_code, 200)
 
     def test_random(self):
