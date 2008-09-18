@@ -78,5 +78,15 @@
             "name": "Kirin Ichiban",
             "slug": "kirin-ichiban"
         }
+    },
+    {
+        "pk": 9,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/fin-du-monde.jpg",
+            "credits": "Fin du Monde, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA",
+            "name": "Fin du Monde",
+            "slug": "fin-du-monde"
+        }
     }
 ]
