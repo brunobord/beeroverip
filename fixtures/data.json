@@ -68,5 +68,15 @@
             "name": "Guinness",
             "slug": "guinness"
         }
+    },
+    {
+        "pk": 8,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/kirinichiban.jpg",
+            "credits": "Kirin Ichiban, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA",
+            "name": "Kirin Ichiban",
+            "slug": "kirin-ichiban"
+        }
     }
 ]
