@@ -97,8 +97,9 @@ URLS
 Append this to your ``urls.py`` file::
 
     urlpatterns += patterns('',
-        (r'^', include('website.beers.urls')),
+        (r'', include('website.beers.urls')),
     )
+    handler404 = 'website.beers.views.custom_404_view'
 
 
 Database stuff

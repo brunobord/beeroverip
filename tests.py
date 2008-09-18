@@ -1,5 +1,6 @@
 from django.test import TestCase
 from django.test.client import Client
+from django.conf import settings
 from models import Beer
 
 class TestUrls(TestCase):
@@ -14,6 +15,7 @@ class TestUrls(TestCase):
     def test_404(self):
         response = self.client.get('/dehfzihfezihgzihgz/')
         self.assertEquals(response.status_code, 404)
+        self.assertContains(response, settings.MEDIA_URL, status_code=404)
 
     def test_media_files(self):
         for beer in Beer.objects.all():

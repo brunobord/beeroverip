@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import *
 from models import Beer
 
+
 info_dict = {
     'queryset': Beer.objects.order_by('slug'),
 }
