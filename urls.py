@@ -1,15 +1,11 @@
 from django.conf.urls.defaults import *
 from models import Beer
 
+from views import *
 
-info_dict = {
-    'queryset': Beer.objects.order_by('slug'),
-}
-
-urlpatterns = patterns('django.views.generic',
-    (r'^all/?', 'list_detail.object_list', info_dict),
-)
-urlpatterns += patterns('beers.views',
-    (r'^random/?', 'beer_random'),
-    (r'^(?P<slug>[\w-]+)?/?', 'beer_detail'),
+urlpatterns = patterns('',
+    url(r'^all/', beer_list, name="beer_list"),
+    url(r'^random/', beer_random, name="beer_random"),
+    url(r'^(?P<slug>[\w-]+)?/?', beer_detail),
+    url(r'^(?P<slug>[\w-]+)?/', beer_detail, name="beer_detail"),
 )

@@ -22,8 +22,8 @@
 <div id="footer">
 <p>
     <a href="/about/">{% trans "About" %}</a> |
-    <a href="/all/">{% trans "List of all beers available" %}</a> |
-    <a href="/random/">{% trans "Random" %}</a>
+    <a href="{% url beer_list %}">{% trans "List of all beers available" %}</a> |
+    <a href="{% url beer_random %}">{% trans "Random" %}</a>
 </p>
 
 <p class="copyright">&copy; {% now "Y" %} Bruno Bord, aka No'<br />{% trans "Pictures are property of their authors, and are usually published under a Creative Commons License." %}</p>

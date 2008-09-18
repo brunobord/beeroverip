@@ -1,9 +1,15 @@
 from django.http import Http404
 from django.conf import settings
 from django.views.generic.simple import direct_to_template
+from django.views.generic.list_detail import object_list
 from beers.models import Beer
 
-def beer_detail(request, slug):
+def beer_list(request):
+    return object_list(request,
+        queryset=Beer.objects.all(),
+    )
+
+def beer_detail(request, slug=None):
     if not slug:
         slug = "default"
     try:
