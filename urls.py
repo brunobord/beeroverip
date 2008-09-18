@@ -10,5 +10,5 @@ urlpatterns = patterns('django.views.generic',
 )
 urlpatterns += patterns('beers.views',
     (r'^random/?', 'beer_random'),
-    (r'^(?P<slug>\w+)?/?', 'beer_detail'),
+    (r'^(?P<slug>[\w-]+)?/?', 'beer_detail'),
 )
