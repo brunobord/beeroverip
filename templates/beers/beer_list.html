@@ -7,8 +7,8 @@
 <h1>{% trans "The beer list" %}</h1>
 <ul>
     {% for beer in object_list %}
-    <li><a href="{{ beer.get_absolute_url }}">{{ beer.name }}</a></li>
+    <li><a href="{% url beer_detail beer.slug %}">{{ beer.name }}</a></li>
     {% endfor %}
-    <li><em>{% trans "Special feature:" %}</em> <a href="/random/">{% trans "Random" %}</a></li>
+    <li><em>{% trans "Special feature:" %}</em> <a href="{% url beer_random %}">{% trans "Random" %}</a></li>
 </ul>
 {% endblock %}
