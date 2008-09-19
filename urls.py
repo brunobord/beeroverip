@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
-from models import Beer
 
+from models import Beer
 from views import *
 
 urlpatterns = patterns('',
