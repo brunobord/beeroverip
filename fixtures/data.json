@@ -88,5 +88,55 @@
             "name": "Fin du Monde",
             "slug": "fin-du-monde"
         }
+    },
+    {
+        "pk": 10,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/barbar.jpg",
+            "credits": "Barbar, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
+            "name": "Barbar",
+            "slug": "barbar"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/rochefort.jpg",
+            "credits": "Rochefort, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
+            "name": "Rochefort",
+            "slug": "rochefort"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/pietra.jpg",
+            "credits": "Pietra, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
+            "name": "Pietra",
+            "slug": "pietra"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/faro.jpg",
+            "credits": "Faro, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
+            "name": "Faro",
+            "slug": "faro"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/super-des-fagnes.jpg",
+            "credits": "Super des Fagnes, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
+            "name": "Super des Fagnes",
+            "slug": "super-des-fagnes"
+        }
     }
 ]
