@@ -3,13 +3,16 @@ from django.utils.translation import ugettext as _
 import os.path
 
 class Beer(models.Model):
+    """Beer model.
+
+    * `name`: name of the beer, to be displayed.
+    * `slug`: prepopulated from `name`.
+    * `picture`: image field (requires PIL module).
+    * `credits`: text field where you can add meta information, credits, etc."""
     name = models.CharField(_('name'), max_length=100)
     slug = models.SlugField(_('slug'), max_length=100)
     picture = models.ImageField(_('picture'), upload_to='beers/', blank=True)
     credits = models.TextField(_('credits'), blank=True)
-
-    class Admin:
-        pass
 
     class Meta:
         verbose_name = _('beer')
