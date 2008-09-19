@@ -23,6 +23,13 @@ class TestUrls(TestCase):
             response = self.client.get(beer.picture.url)
             self.assertEquals(response.status_code, 200)
 
+    def test_media_file_not_found(self):
+        random_beer = Beer.objects.get(pk=1)
+        random_beer.picture = 'unknown/file.jpg'
+        random_beer.save()
+        response = self.client.get(random_beer.picture.url)
+        self.assertNotEquals(response.status_code, 200)
+
     def test_data(self):
         for beer in Beer.objects.all():
             response = self.client.get(beer.get_absolute_url())
