@@ -27,7 +27,6 @@ def beer_random(request):
     return beer_detail(request, random_beer.slug)
 
 def custom_404_view(request):
-    response = direct_to_template(request, '404.html',
-        extra_context={'MEDIA_URL': settings.MEDIA_URL})
+    response = direct_to_template(request, '404.html')
     response.status_code = 404
     return response
