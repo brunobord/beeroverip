@@ -138,5 +138,15 @@
             "name": "Super des Fagnes",
             "slug": "super-des-fagnes"
         }
+    },
+    {
+        "pk": 15,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/ename.jpg",
+            "credits": "Ename, by Benoît Chesneau, (unknown license, probably free)",
+            "name": "Ename",
+            "slug": "ename"
+        }
     }
 ]
