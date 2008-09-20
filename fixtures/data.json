@@ -144,7 +144,7 @@
         "model": "beers.beer",
         "fields": {
             "picture": "beers/ename.jpg",
-            "credits": "Ename, by Benoît Chesneau, (unknown license, probably free)",
+            "credits": "Ename, by Benoît Chesneau, (Public Domain)",
             "name": "Ename",
             "slug": "ename"
         }
