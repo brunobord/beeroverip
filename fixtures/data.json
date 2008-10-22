@@ -158,5 +158,15 @@
             "name": "Nessie Mac Queen's",
             "slug": "nessie"
         }
+    },
+    {
+        "pk": 17,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/lapin-kulta.jpg",
+            "credits": "Lapin Kulta, by Gilles Fabio",
+            "name": "Lapin Kulta",
+            "slug": "lapin-kulta"
+        }
     }
 ]
