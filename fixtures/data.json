@@ -168,5 +168,15 @@
             "name": "Lapin Kulta",
             "slug": "lapin-kulta"
         }
+    },
+    {
+        "pk": 18,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/st-landelin.jpg",
+            "credits": "Saint Landelin, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA",
+            "name": "Saint Landelin",
+            "slug": "st-landelin"
+        }
     }
 ]
