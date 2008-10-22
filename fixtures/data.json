@@ -148,5 +148,15 @@
             "name": "Ename",
             "slug": "ename"
         }
+    },
+    {
+        "pk": 16,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/nessie.jpg",
+            "credits": "Nessie Mac Queen's, by Gilles Fabio",
+            "name": "Nessie Mac Queen's",
+            "slug": "nessie"
+        }
     }
 ]
