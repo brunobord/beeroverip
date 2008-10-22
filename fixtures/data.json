@@ -178,5 +178,16 @@
             "name": "Saint Landelin",
             "slug": "st-landelin"
         }
+    },
+    {
+        "pk": 19,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/leffe-ruby.jpg",
+            "credits": "Leffe Ruby, by Bruno Bord, Creative Commons licensed, CC-BY-SA, http://flickr.com/photos/brunobord/2590409600/",
+            "name": "Leffe Ruby",
+            "slug": "leffe-ruby"
+        }
     }
+    
 ]
