@@ -154,7 +154,7 @@
         "model": "beers.beer",
         "fields": {
             "picture": "beers/nessie.jpg",
-            "credits": "Nessie Mac Queen's, by Gilles Fabio",
+            "credits": "Nessie Mac Queen's, by Gilles Fabio (Public Domain)",
             "name": "Nessie Mac Queen's",
             "slug": "nessie"
         }
@@ -164,7 +164,7 @@
         "model": "beers.beer",
         "fields": {
             "picture": "beers/lapin-kulta.jpg",
-            "credits": "Lapin Kulta, by Gilles Fabio",
+            "credits": "Lapin Kulta, by Gilles Fabio (Public Domain)",
             "name": "Lapin Kulta",
             "slug": "lapin-kulta"
         }
