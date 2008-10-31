@@ -5,9 +5,15 @@ from models import Beer
 
 class TestUrls(TestCase):
     """We just have to test URLs, by the way..."""
-
     fixtures = ['data']
 
+    def test_000(self):
+        "not a test case, just for the user's information"
+        print
+        print "FYI:"
+        print "num. of beers: %s" % Beer.objects.count()
+        print
+        
     def test_home(self):
         """Home page.
         Should return 'something' (this means we have a default beer)"""

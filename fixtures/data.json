@@ -188,6 +188,15 @@
             "name": "Leffe Ruby",
             "slug": "leffe-ruby"
         }
+    },
+    {
+        "pk": 20,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/picon.jpg",
+            "credits": "Picon bière, by Victor Stinner, Creative Commons licensed, CC-BY-SA",
+            "name": "Picon",
+            "slug": "picon"
+        }
     }
-    
 ]
