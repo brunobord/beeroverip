@@ -6,7 +6,7 @@ from beers.models import Beer
 
 def beer_list(request):
     return object_list(request,
-        queryset=Beer.objects.all(),
+        queryset=Beer.objects.order_by('name'),
     )
 
 def beer_detail(request, slug=None):
