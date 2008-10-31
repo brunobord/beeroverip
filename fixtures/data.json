@@ -198,5 +198,15 @@
             "name": "Picon",
             "slug": "picon"
         }
+    },
+    {
+        "pk": 21,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/leffe_brune.jpg",
+            "credits": "Leffe Brune (6,5°), by Victor Stinner, Creative Commons licensed, CC-BY-SA",
+            "name": "Leffe Bruno",
+            "slug": "leffe-brune"
+        }
     }
 ]
