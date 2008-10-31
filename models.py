@@ -1,6 +1,8 @@
+import os.path
+import datetime
 from django.db import models
 from django.utils.translation import ugettext as _
-import os.path
+
 
 class Beer(models.Model):
     """Beer model.
@@ -13,6 +15,8 @@ class Beer(models.Model):
     slug = models.SlugField(_('slug'), max_length=100)
     picture = models.ImageField(_('picture'), upload_to='beers/', blank=True)
     credits = models.TextField(_('credits'), blank=True)
+    upload_date = models.DateTimeField(_('upload_date'),
+        default=datetime.datetime.now)
 
     class Meta:
         verbose_name = _('beer')
