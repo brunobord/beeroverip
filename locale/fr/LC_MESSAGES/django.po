@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-31 22:01+0100\n"
-"PO-Revision-Date: 2008-10-31 22:02+0100\n"
+"POT-Creation-Date: 2008-10-31 22:23+0100\n"
+"PO-Revision-Date: 2008-10-31 22:24+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -100,4 +100,13 @@ msgstr "Liste des bières"
 #: templates/beers/beer_list.html:12
 msgid "Special feature:"
 msgstr "Spécial :"
+
+#: templates/feeds/beers_description.html:5
+msgid "A Beer over RSS:"
+msgstr "une Bière via RSS :"
+
+#: templates/feeds/beers_description.html:5
+#, python-format
+msgid "more precisely a <em>%(obj)s</em>"
+msgstr "ou plus précisément une <em>%(obj)s</em>"
 
