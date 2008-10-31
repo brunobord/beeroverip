@@ -3,4 +3,7 @@
 <h1>{{ obj }}</h1>
 <img src="{{ obj.picture.url }}" alt="{{ obj.name }}"/>
 <p>{% trans "A Beer over RSS:"%} {% ifnotequal obj.slug "default" %}{% blocktrans %}more precisely a <em>{{ obj }}</em>{% endblocktrans %}{% endifnotequal %}</p>
+{% if obj.credits %}
+    <p><small>{% trans "Credits:" %} {{ obj.credits }}</small></p>
+{% endif %}
 
