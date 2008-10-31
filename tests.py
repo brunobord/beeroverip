@@ -54,3 +54,8 @@ class TestUrls(TestCase):
         """The random view should return a beer view"""
         response = self.client.get("/random/")
         self.assertEquals(response.status_code, 200)
+        
+    def test_rss_flow(self):
+        """Testing the RSS flow"""
+        response = self.client.get('/flow/beers/')
+        self.assertEquals(response.status_code, 200)        
