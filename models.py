@@ -22,6 +22,7 @@ class Beer(models.Model):
     class Meta:
         verbose_name = _('beer')
         verbose_name_plural = _('beers')
+        ordering = ('-upload_date',)
 
     def __unicode__(self):
         return self.name
