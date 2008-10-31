@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.test.client import Client
 from django.conf import settings
@@ -52,10 +53,15 @@ class TestUrls(TestCase):
 
     def test_random(self):
         """The random view should return a beer view"""
-        response = self.client.get("/random/")
+        response = self.client.get(reverse('beer_random'))
         self.assertEquals(response.status_code, 200)
         
     def test_rss_flow(self):
         """Testing the RSS flow"""
         response = self.client.get('/flow/beers/')
-        self.assertEquals(response.status_code, 200)        
+        self.assertEquals(response.status_code, 200)
+    
+    def test_url_all(self):
+        """Testing '/all/' url"""
+        response = self.client.get(reverse('beer_list'))
+        self.assertEquals(response.status_code, 200)
