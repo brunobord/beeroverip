@@ -3,6 +3,7 @@ from django.utils.translation import ugettext as _
 from models import Beer
 
 class BeerFlow(Feed):
+    """Basic beer flow."""
     title = _("Beer flow, latest")
     link = "/all/"
     description = _("Latest Beers available for IP Transport")
