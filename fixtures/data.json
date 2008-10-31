@@ -205,8 +205,18 @@
         "fields": {
             "picture": "beers/leffe_brune.jpg",
             "credits": "Leffe Brune (6,5°), by Victor Stinner, Creative Commons licensed, CC-BY-SA",
-            "name": "Leffe Bruno",
+            "name": "Leffe Brune",
             "slug": "leffe-brune"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/kro.jpg",
+            "credits": "Kronebourg, by gzap, Creative Commons licensed, CC-BY-NC-SA, http://www.flickr.com/photos/gzap/16924449/",
+            "name": "Kronenbourg",
+            "slug": "kro"
         }
     }
 ]
