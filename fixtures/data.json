@@ -1,221 +1,243 @@
 [
     {
-        "pk": 1,
-        "model": "beers.beer",
+        "pk": 1, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/default.jpg",
-            "credits": "A Glass of Ayinger, by wickenden, http://flickr.com/photos/wickenden/1104589745",
-            "name": "Beer",
+            "picture": "beers/default.jpg", 
+            "credits": "A Glass of Ayinger, by wickenden, http://flickr.com/photos/wickenden/1104589745", 
+            "upload_date": "2008-08-14 12:47:32", 
+            "name": "Beer", 
             "slug": "default"
         }
-    },
+    }, 
     {
-        "pk": 2,
-        "model": "beers.beer",
+        "pk": 2, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/stout.jpg",
-            "credits": "Murphy's, by adactio, http://flickr.com/photos/adactio/60443262/",
-            "name": "Stout",
+            "picture": "beers/stout.jpg", 
+            "credits": "Murphy's, by adactio, http://flickr.com/photos/adactio/60443262/", 
+            "upload_date": "2008-08-23 00:45:07", 
+            "name": "Stout", 
             "slug": "stout"
         }
-    },
+    }, 
     {
-        "pk": 3,
-        "model": "beers.beer",
+        "pk": 3, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/dubbel.jpg",
-            "credits": "Allagash Dubbel Ale, by MontageMan, http://www.flickr.com/photos/montage_man/2178721155/",
-            "name": "Dubbel",
+            "picture": "beers/dubbel.jpg", 
+            "credits": "Allagash Dubbel Ale, by MontageMan, http://www.flickr.com/photos/montage_man/2178721155/", 
+            "upload_date": "2008-09-03 23:45:11", 
+            "name": "Dubbel", 
             "slug": "dubbel"
         }
-    },
+    }, 
     {
-        "pk": 4,
-        "model": "beers.beer",
+        "pk": 4, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/gueuze.jpg",
-            "credits": "Belle-Vue Gueuze, by H4NUM4N, http://www.flickr.com/photos/hanuman/682378582/",
-            "name": "Gueuze",
+            "picture": "beers/gueuze.jpg", 
+            "credits": "Belle-Vue Gueuze, by H4NUM4N, http://www.flickr.com/photos/hanuman/682378582/", 
+            "upload_date": "2008-09-03 23:45:12", 
+            "name": "Gueuze", 
             "slug": "gueuze"
         }
-    },
+    }, 
     {
-        "pk": 5,
-        "model": "beers.beer",
+        "pk": 5, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/tripel.jpg",
-            "credits": "Maredsous Triple, by kapital, http://flickr.com/photos/kapital/2371953228/",
-            "name": "Tripel",
+            "picture": "beers/tripel.jpg", 
+            "credits": "Maredsous Triple, by kapital, http://flickr.com/photos/kapital/2371953228/", 
+            "upload_date": "2008-09-03 23:45:13", 
+            "name": "Tripel", 
             "slug": "tripel"
         }
-    },
+    }, 
     {
-        "pk": "6",
-        "model": "beers.beer",
+        "pk": 6, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/maudite.jpg",
-            "credits": "Maudite, by Pierre Roussel, Creative Commons licensed, CC-BY",
-            "name": "Maudite",
+            "picture": "beers/maudite.jpg", 
+            "credits": "Maudite, by Pierre Roussel, Creative Commons licensed, CC-BY", 
+            "upload_date": "2008-09-10 19:46:57", 
+            "name": "Maudite", 
             "slug": "maudite"
         }
-    },
+    }, 
     {
-        "pk": 7,
-        "model": "beers.beer",
+        "pk": 7, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/guinness.jpg",
-            "credits": "Guinness pint, by coda, http://flickr.com/photos/coda/61991984/",
-            "name": "Guinness",
+            "picture": "beers/guinness.jpg", 
+            "credits": "Guinness pint, by coda, http://flickr.com/photos/coda/61991984/", 
+            "upload_date": "2008-09-10 21:01:27", 
+            "name": "Guinness", 
             "slug": "guinness"
         }
-    },
+    }, 
     {
-        "pk": 8,
-        "model": "beers.beer",
+        "pk": 8, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/kirinichiban.jpg",
-            "credits": "Kirin Ichiban, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA",
-            "name": "Kirin Ichiban",
+            "picture": "beers/kirinichiban.jpg", 
+            "credits": "Kirin Ichiban, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA", 
+            "upload_date": "2008-09-18 21:23:12", 
+            "name": "Kirin Ichiban", 
             "slug": "kirin-ichiban"
         }
-    },
+    }, 
     {
-        "pk": 9,
-        "model": "beers.beer",
+        "pk": 9, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/fin-du-monde.jpg",
-            "credits": "Fin du Monde, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA",
-            "name": "Fin du Monde",
+            "picture": "beers/fin-du-monde.jpg", 
+            "credits": "Fin du Monde, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA", 
+            "upload_date": "2008-09-18 22:00:19", 
+            "name": "Fin du Monde", 
             "slug": "fin-du-monde"
         }
-    },
+    }, 
     {
-        "pk": 10,
-        "model": "beers.beer",
+        "pk": 10, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/barbar.jpg",
-            "credits": "Barbar, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
-            "name": "Barbar",
+            "picture": "beers/barbar.jpg", 
+            "credits": "Barbar, by Bruno Bord, Creative Commons Licensed, CC-BY-SA", 
+            "upload_date": "2008-09-19 18:52:14", 
+            "name": "Barbar", 
             "slug": "barbar"
         }
-    },
+    }, 
     {
-        "pk": 11,
-        "model": "beers.beer",
+        "pk": 11, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/rochefort.jpg",
-            "credits": "Rochefort, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
-            "name": "Rochefort",
+            "picture": "beers/rochefort.jpg", 
+            "credits": "Rochefort, by Bruno Bord, Creative Commons Licensed, CC-BY-SA", 
+            "upload_date": "2008-09-19 18:53:14", 
+            "name": "Rochefort", 
             "slug": "rochefort"
         }
-    },
+    }, 
     {
-        "pk": 12,
-        "model": "beers.beer",
+        "pk": 12, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/pietra.jpg",
-            "credits": "Pietra, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
-            "name": "Pietra",
+            "picture": "beers/pietra.jpg", 
+            "credits": "Pietra, by Bruno Bord, Creative Commons Licensed, CC-BY-SA", 
+            "upload_date": "2008-09-19 18:54:14", 
+            "name": "Pietra", 
             "slug": "pietra"
         }
-    },
+    }, 
     {
-        "pk": 13,
-        "model": "beers.beer",
+        "pk": 13, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/faro.jpg",
-            "credits": "Faro, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
-            "name": "Faro",
+            "picture": "beers/faro.jpg", 
+            "credits": "Faro, by Bruno Bord, Creative Commons Licensed, CC-BY-SA", 
+            "upload_date": "2008-09-19 18:55:14", 
+            "name": "Faro", 
             "slug": "faro"
         }
-    },
+    }, 
     {
-        "pk": 14,
-        "model": "beers.beer",
+        "pk": 14, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/super-des-fagnes.jpg",
-            "credits": "Super des Fagnes, by Bruno Bord, Creative Commons Licensed, CC-BY-SA",
-            "name": "Super des Fagnes",
+            "picture": "beers/super-des-fagnes.jpg", 
+            "credits": "Super des Fagnes, by Bruno Bord, Creative Commons Licensed, CC-BY-SA", 
+            "upload_date": "2008-10-31 21:35:41", 
+            "name": "Super des Fagnes", 
             "slug": "super-des-fagnes"
         }
-    },
+    }, 
     {
-        "pk": 15,
-        "model": "beers.beer",
+        "pk": 15, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/ename.jpg",
-            "credits": "Ename, by Benoît Chesneau, (Public Domain)",
-            "name": "Ename",
+            "picture": "beers/ename.jpg", 
+            "credits": "Ename, by Benoît Chesneau, (Public Domain)", 
+            "upload_date": "2008-09-20 23:27:05", 
+            "name": "Ename", 
             "slug": "ename"
         }
-    },
+    }, 
     {
-        "pk": 16,
-        "model": "beers.beer",
+        "pk": 16, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/nessie.jpg",
-            "credits": "Nessie Mac Queen's, by Gilles Fabio (Public Domain)",
-            "name": "Nessie Mac Queen's",
+            "picture": "beers/nessie.jpg", 
+            "credits": "Nessie Mac Queen's, by Gilles Fabio (Public Domain)", 
+            "upload_date": "2008-10-22 21:25:06", 
+            "name": "Nessie Mac Queen's", 
             "slug": "nessie"
         }
-    },
+    }, 
     {
-        "pk": 17,
-        "model": "beers.beer",
+        "pk": 17, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/lapin-kulta.jpg",
-            "credits": "Lapin Kulta, by Gilles Fabio (Public Domain)",
-            "name": "Lapin Kulta",
+            "picture": "beers/lapin-kulta.jpg", 
+            "credits": "Lapin Kulta, by Gilles Fabio (Public Domain)", 
+            "upload_date": "2008-10-22 21:31:17", 
+            "name": "Lapin Kulta", 
             "slug": "lapin-kulta"
         }
-    },
+    }, 
     {
-        "pk": 18,
-        "model": "beers.beer",
+        "pk": 18, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/st-landelin.jpg",
-            "credits": "Saint Landelin, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA",
-            "name": "Saint Landelin",
+            "picture": "beers/st-landelin.jpg", 
+            "credits": "Saint Landelin, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA", 
+            "upload_date": "2008-10-22 21:38:17", 
+            "name": "Saint Landelin", 
             "slug": "st-landelin"
         }
-    },
+    }, 
     {
-        "pk": 19,
-        "model": "beers.beer",
+        "pk": 19, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/leffe-ruby.jpg",
-            "credits": "Leffe Ruby, by Bruno Bord, Creative Commons licensed, CC-BY-SA, http://flickr.com/photos/brunobord/2590409600/",
-            "name": "Leffe Ruby",
+            "picture": "beers/leffe-ruby.jpg", 
+            "credits": "Leffe Ruby, by Bruno Bord, Creative Commons licensed, CC-BY-SA, http://flickr.com/photos/brunobord/2590409600/", 
+            "upload_date": "2008-10-22 22:20:06", 
+            "name": "Leffe Ruby", 
             "slug": "leffe-ruby"
         }
-    },
+    }, 
     {
-        "pk": 20,
-        "model": "beers.beer",
+        "pk": 20, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/picon.jpg",
-            "credits": "Picon bière, by Victor Stinner, Creative Commons licensed, CC-BY-SA",
-            "name": "Picon",
+            "picture": "beers/picon.jpg", 
+            "credits": "Picon bière, by Victor Stinner, Creative Commons licensed, CC-BY-SA", 
+            "upload_date": "2008-10-31 21:00:06", 
+            "name": "Picon", 
             "slug": "picon"
         }
-    },
+    }, 
     {
-        "pk": 21,
-        "model": "beers.beer",
+        "pk": 21, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/leffe_brune.jpg",
-            "credits": "Leffe Brune (6,5°), by Victor Stinner, Creative Commons licensed, CC-BY-SA",
-            "name": "Leffe Brune",
+            "picture": "beers/leffe_brune.jpg", 
+            "credits": "Leffe Brune (6,5°), by Victor Stinner, Creative Commons licensed, CC-BY-SA", 
+            "upload_date": "2008-10-31 21:03:16", 
+            "name": "Leffe Brune", 
             "slug": "leffe-brune"
         }
-    },
+    }, 
     {
-        "pk": 22,
-        "model": "beers.beer",
+        "pk": 22, 
+        "model": "beers.beer", 
         "fields": {
-            "picture": "beers/kro.jpg",
-            "credits": "Kronebourg, by gzap, Creative Commons licensed, CC-BY-NC-SA, http://www.flickr.com/photos/gzap/16924449/",
-            "name": "Kronenbourg",
+            "picture": "beers/kro.jpg", 
+            "credits": "Kronebourg, by gzap, Creative Commons licensed, CC-BY-NC-SA, http://www.flickr.com/photos/gzap/16924449/", 
+            "upload_date": "2008-10-31 21:06:44", 
+            "name": "Kronenbourg", 
             "slug": "kro"
         }
     }
