@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-18 23:16+0200\n"
-"PO-Revision-Date: 2008-09-18 23:18+0100\n"
+"POT-Creation-Date: 2008-10-31 22:01+0100\n"
+"PO-Revision-Date: 2008-10-31 22:02+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,27 +17,31 @@ msgstr ""
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
 
-#: models.py:6
+#: models.py:15
 msgid "name"
 msgstr "nom"
 
-#: models.py:7
+#: models.py:16
 msgid "slug"
 msgstr "slug"
 
-#: models.py:8
+#: models.py:17
 msgid "picture"
 msgstr "image"
 
-#: models.py:9
+#: models.py:18
 msgid "credits"
 msgstr "crédits"
 
-#: models.py:15
+#: models.py:19
+msgid "upload date"
+msgstr "date d'ajout"
+
+#: models.py:23
 msgid "beer"
 msgstr "bière"
 
-#: models.py:16
+#: models.py:24
 msgid "beers"
 msgstr "bières"
 
@@ -50,28 +54,28 @@ msgstr "Bière introuvable..."
 msgid "Credits:"
 msgstr "Crédits :"
 
-#: templates/default.html:24
+#: templates/default.html:25
 msgid "About"
 msgstr "À propos"
 
-#: templates/default.html:25
+#: templates/default.html:26
 msgid "List of all beers available"
 msgstr "Liste de toutes les bières disponibles"
 
-#: templates/default.html:26
+#: templates/default.html:27
 #: templates/beers/beer_list.html:12
 msgid "Random"
 msgstr "Aléatoire"
 
-#: templates/default.html:29
+#: templates/default.html:30
 msgid "Pictures are property of their authors, and are usually published under a Creative Commons License."
 msgstr "Les images sont la propriété de leurs auteurs, et sont généralement publiée sous contrat Creative Commons."
 
-#: templates/default.html:31
+#: templates/default.html:32
 msgid "<strong>SERIOUS WARNING:</strong> This website is not about getting pissed. It's just about sending virtual beers to people you like or you want to thank. Please, please don't drink and drive. Please, please don't destroy your brain cells by drinking too much. Please, please, prefer having only one fine beer rather than a dozen pints of cheap donkey piss. Many thanks."
 msgstr "<strong>AVERTISSEMENT SÉRIEUX :</strong> Ce site internet n'est pas destiné à te mettre minable ou à faire l'apologie de la murge. Il s'agit simplement d'envoyer des bières virtuelles aux gens que tu apprécies ou que tu veux remercier. S'il te plaît, je t'en prie, ne conduit pas bourré. S'il te plaît, je t'en prie, ne détruis pas tes neurones en abusant de la boisson. S'il te plaît, je t'en prie, choisis plutôt une seule bonne bière plutôt qu'une dizaine de bouteilles de pisse d'âne pas chères. Merci bien."
 
-#: templates/default.html:32
+#: templates/default.html:33
 msgid "You may find very valuable advices by visiting the <a href=\"http://www.drinkaware.co.uk/\">Drink Aware</a> website."
 msgstr "Tu peux trouver de bien plus amples informations en allant sur le site <a href=\"http://www.boiretrop.fr/\">Boire Trop</a> (flash requis)."
 
