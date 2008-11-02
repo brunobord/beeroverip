@@ -240,5 +240,16 @@
             "name": "Kronenbourg", 
             "slug": "kro"
         }
+    }, 
+    {
+        "pk": 23, 
+        "model": "beers.beer", 
+        "fields": {
+            "picture": "beers/monty-python-holy-ail.jpg", 
+            "credits": "Monty Python Holy Ail, by Ploum, Creative Commons licensed, CC-BY", 
+            "upload_date": "2008-11-02 18:05:44", 
+            "name": "Monty Python Holy Ail", 
+            "slug": "monty-python-holy-ail"
+        }
     }
 ]
