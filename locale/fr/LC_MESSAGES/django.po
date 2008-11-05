@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-31 22:41+0100\n"
-"PO-Revision-Date: 2008-10-31 22:42+0100\n"
+"POT-Creation-Date: 2008-11-05 21:45+0100\n"
+"PO-Revision-Date: 2008-11-05 21:45+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,11 +17,11 @@ msgstr ""
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
 
-#: flows.py:6
+#: flows.py:7
 msgid "Beer flow, latest"
 msgstr "Dernières bières dans le flux"
 
-#: flows.py:8
+#: flows.py:9
 msgid "Latest Beers available for IP Transport"
 msgstr "Voici les dernières bières proposées pour le transport via IP"
 
@@ -59,6 +59,7 @@ msgstr "Bière introuvable..."
 
 #: templates/404.html:8
 #: templates/beers/beer_detail.html:13
+#: templates/feeds/beers_description.html:7
 msgid "Credits:"
 msgstr "Crédits :"
 
@@ -101,8 +102,8 @@ msgstr "une Bière Sur IP"
 
 #: templates/beers/beer_detail.html:10
 #, python-format
-msgid "more precisely a <em>%(beer)s</em>"
-msgstr "ou plus précisément une <em>%(beer)s</em>"
+msgid "more precisely: <em>%(beer)s</em>"
+msgstr "ou plus précisément: <em>%(beer)s</em>"
 
 #: templates/beers/beer_list.html:4
 #: templates/beers/beer_list.html.py:7
@@ -119,6 +120,6 @@ msgstr "une Bière via RSS :"
 
 #: templates/feeds/beers_description.html:5
 #, python-format
-msgid "more precisely a <em>%(obj)s</em>"
-msgstr "ou plus précisément une <em>%(obj)s</em>"
+msgid "more precisely: <em>%(obj)s</em>"
+msgstr "ou plus précisément: <em>%(obj)s</em>"
 
