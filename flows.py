@@ -1,5 +1,5 @@
 from django.contrib.syndication.feeds import Feed
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from models import Beer
 
 class BeerFlow(Feed):
@@ -10,4 +10,3 @@ class BeerFlow(Feed):
 
     def items(self):
         return Beer.objects.order_by('-upload_date')[:10]
-
