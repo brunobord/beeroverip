@@ -7,7 +7,7 @@
 
     <h1>{% trans "You've just been offered..." %}</h1>
     <img src="{{ beer.picture.url }}" alt="{{ beer.name }}"/>
-    <p>{% trans "a Beer over IP" %}, {% ifnotequal beer.slug "default" %}{% blocktrans %}more precisely a <em>{{ beer }}</em>{% endblocktrans %}{% endifnotequal %}</p>
+    <p>{% trans "a Beer over IP" %}, {% ifnotequal beer.slug "default" %}{% blocktrans %}more precisely: <em>{{ beer }}</em>{% endblocktrans %}{% endifnotequal %}</p>
 
 {% if beer.credits %}
     <p class="copyright">{% trans "Credits:" %} {{ beer.credits }}</p>
