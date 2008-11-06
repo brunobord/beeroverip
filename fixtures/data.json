@@ -306,5 +306,16 @@
             "name": "Hoegaarden Rosée",
             "slug": "hoegaarden-rosee"
         }
+    },
+    {
+        "pk": 29,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/hoegaarden-citron.jpg",
+            "credits": "Hoegaarden Citron, by DJ, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-06 22:39:00",
+            "name": "Hoegaarden Citron",
+            "slug": "hoegaarden-citron"
+        }
     }
 ]
