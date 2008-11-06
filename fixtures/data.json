@@ -262,5 +262,16 @@
             "name": "Tripel Karmeliet",
             "slug": "tripel-karmeliet"
         }
+    },
+    {
+        "pk": 25,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/ciney-blonde.jpg",
+            "credits": "Ciney Blonde, by DJ, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-06 22:25:00",
+            "name": "Ciney Blonde",
+            "slug": "ciney-blonde"
+        }
     }
 ]
