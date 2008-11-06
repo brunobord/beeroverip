@@ -284,5 +284,16 @@
             "name": "Redbocq",
             "slug": "redbocq"
         }
+    },
+    {
+        "pk": 27,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/jupiler.jpg",
+            "credits": "Jupiler, by DJ, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-06 22:33:00",
+            "name": "Jupiler",
+            "slug": "jupiler"
+        }
     }
 ]
