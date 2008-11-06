@@ -273,5 +273,16 @@
             "name": "Ciney Blonde",
             "slug": "ciney-blonde"
         }
+    },
+    {
+        "pk": 26,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/redbocq.jpg",
+            "credits": "Redbocq, by DJ, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-06 22:29:00",
+            "name": "Redbocq",
+            "slug": "redbocq"
+        }
     }
 ]
