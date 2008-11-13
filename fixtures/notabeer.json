@@ -1,0 +1,13 @@
+[
+    {
+        "pk": 1,
+        "model": "beers.notabeer",
+        "fields": {
+            "picture": "drinks/default.jpg",
+            "credits": "A coffee cup",
+            "upload_date": "2008-11-13 22:54:00",
+            "name": "Drink",
+            "slug": "default"
+        }
+    }
+]
