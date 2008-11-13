@@ -1,3 +1,4 @@
+import os
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.test.client import Client
@@ -14,7 +15,7 @@ class TestUrls(TestCase):
         print "FYI:"
         print "num. of beers: %s" % Beer.objects.count()
         print
-        
+
     def test_home(self):
         """Home page.
         Should return 'something' (this means we have a default beer)"""
@@ -55,13 +56,27 @@ class TestUrls(TestCase):
         """The random view should return a beer view"""
         response = self.client.get(reverse('beer_random'))
         self.assertEquals(response.status_code, 200)
-        
+
     def test_rss_flow(self):
         """Testing the RSS flow"""
         response = self.client.get('/flow/beers/')
         self.assertEquals(response.status_code, 200)
-    
+
     def test_url_all(self):
         """Testing '/all/' url"""
         response = self.client.get(reverse('beer_list'))
         self.assertEquals(response.status_code, 200)
+
+class TestImages(TestCase):
+    """Testing image attributes"""
+    fixtures = ['data']
+
+    def test_file_existence(self):
+        for beer in Beer.objects.all():
+            self.assertTrue(os.path.isfile(beer.picture.file.name))
+
+    def test_image_size(self):
+        for beer in Beer.objects.all():
+            self.assertTrue(max(beer.picture.height, beer.picture.width) <= 500)
+
+# Eof
