@@ -317,5 +317,16 @@
             "name": "Hoegaarden Citron",
             "slug": "hoegaarden-citron"
         }
+    },
+    {
+        "pk": 30,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/weihenstephaner.jpg",
+            "credits": "Weihenstephaner Hefe Weiss, by Nicolas Dufour, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-13 21:34:00",
+            "name": "Weihenstephaner Hefe Weiss",
+            "slug": "weihenstephaner"
+        }
     }
 ]
