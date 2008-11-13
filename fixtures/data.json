@@ -328,5 +328,16 @@
             "name": "Weihenstephaner Hefe Weiss",
             "slug": "weihenstephaner"
         }
+    },
+    {
+        "pk": 31,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/xxxx.jpg",
+            "credits": "XXXX, by Gilles Fabio, (Public Domain)",
+            "upload_date": "2008-11-13 21:41:00",
+            "name": "XXXX",
+            "slug": "xxxx"
+        }
     }
 ]
