@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-05 21:45+0100\n"
-"PO-Revision-Date: 2008-11-05 21:45+0100\n"
+"POT-Creation-Date: 2008-11-13 23:54+0100\n"
+"PO-Revision-Date: 2008-11-13 23:55+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -25,17 +25,13 @@ msgstr "Dernières bières dans le flux"
 msgid "Latest Beers available for IP Transport"
 msgstr "Voici les dernières bières proposées pour le transport via IP"
 
-#: models.py:15
+#: models.py:16
 msgid "name"
 msgstr "nom"
 
-#: models.py:16
+#: models.py:17
 msgid "slug"
 msgstr "slug"
-
-#: models.py:17
-msgid "picture"
-msgstr "image"
 
 #: models.py:18
 msgid "credits"
@@ -45,13 +41,26 @@ msgstr "crédits"
 msgid "upload date"
 msgstr "date d'ajout"
 
-#: models.py:23
+#: models.py:34
+#: models.py:45
+msgid "picture"
+msgstr "image"
+
+#: models.py:36
 msgid "beer"
 msgstr "bière"
 
-#: models.py:24
+#: models.py:37
 msgid "beers"
 msgstr "bières"
+
+#: models.py:48
+msgid "drink"
+msgstr "boisson"
+
+#: models.py:49
+msgid "drinks"
+msgstr "boissons"
 
 #: templates/404.html:7
 msgid "Beer not found..."
@@ -59,6 +68,7 @@ msgstr "Bière introuvable..."
 
 #: templates/404.html:8
 #: templates/beers/beer_detail.html:13
+#: templates/drinks/drink_detail.html:13
 #: templates/feeds/beers_description.html:7
 msgid "Credits:"
 msgstr "Crédits :"
@@ -77,6 +87,7 @@ msgstr "Liste de toutes les bières disponibles"
 
 #: templates/default.html:29
 #: templates/beers/beer_list.html:12
+#: templates/drinks/drink_list.html:12
 msgid "Random"
 msgstr "Aléatoire"
 
@@ -93,6 +104,7 @@ msgid "You may find very valuable advices by visiting the <a href=\"http://www.d
 msgstr "Tu peux trouver de bien plus amples informations en allant sur le site <a href=\"http://www.boiretrop.fr/\">Boire Trop</a> (flash requis)."
 
 #: templates/beers/beer_detail.html:8
+#: templates/drinks/drink_detail.html:8
 msgid "You've just been offered..."
 msgstr "On vient de t'offrir..."
 
@@ -111,8 +123,23 @@ msgid "The beer list"
 msgstr "Liste des bières"
 
 #: templates/beers/beer_list.html:12
+#: templates/drinks/drink_list.html:12
 msgid "Special feature:"
 msgstr "Spécial :"
+
+#: templates/drinks/drink_detail.html:10
+msgid "a <del>Beer</del>Drink over IP"
+msgstr "une <del>Bière</del>Boisson Sur IP"
+
+#: templates/drinks/drink_detail.html:10
+#, python-format
+msgid "more precisely: <em>%(drink)s</em>"
+msgstr "ou plus précisément: <em>%(drink)s</em>"
+
+#: templates/drinks/drink_list.html:4
+#: templates/drinks/drink_list.html.py:7
+msgid "The drink list"
+msgstr "Liste des boissons"
 
 #: templates/feeds/beers_description.html:5
 msgid "A Beer over RSS:"
