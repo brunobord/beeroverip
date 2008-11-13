@@ -1,0 +1,16 @@
+{% extends "default.html" %}
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {{ drink.name }}{% endblock %}
+
+{% block content %}
+
+    <h1>{% trans "You've just been offered..." %}</h1>
+    <img src="{{ drink.picture.url }}" alt="{{ drink.name }}"/>
+    <p>{% trans "a <del>Beer</del>Drink over IP" %}, {% ifnotequal drink.slug "default" %}{% blocktrans %}more precisely: <em>{{ drink }}</em>{% endblocktrans %}{% endifnotequal %}</p>
+
+{% if drink.credits %}
+    <p class="copyright">{% trans "Credits:" %} {{ drink.credits }}</p>
+{% endif %}
+
+{% endblock %}

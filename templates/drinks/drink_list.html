@@ -1,0 +1,14 @@
+{% extends "default.html" %}
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "The drink list" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "The drink list" %}</h1>
+<ul>
+    {% for drink in object_list %}
+    <li><a href="{% url drink_detail drink.slug %}">{{ drink.name }}</a></li>
+    {% endfor %}
+    <li><em>{% trans "Special feature:" %}</em> <a href="{% url drink_random %}">{% trans "Random" %}</a></li>
+</ul>
+{% endblock %}
