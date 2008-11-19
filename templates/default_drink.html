@@ -1,0 +1,10 @@
+{% extends "default.html" %}
+{% load i18n %}
+
+{% block foot_menu %}
+<p>
+    <a href="/about/">{% trans "About" %}</a> |
+    <a href="{% url drink_list %}">{% trans "List of all available drinks" %}</a> |
+    <a href="{% url drink_random %}">{% trans "Random Drink" %}</a>
+</p>
+{% endblock %}
