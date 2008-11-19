@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-19 20:59+0100\n"
-"PO-Revision-Date: 2008-11-19 20:59+0100\n"
+"POT-Creation-Date: 2008-11-19 21:14+0100\n"
+"PO-Revision-Date: 2008-11-19 21:14+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,7 @@ msgid "Beer Flow"
 msgstr "Flux de Bières"
 
 #: templates/default.html:28
-#: templates/default_drink.html:6
+#: templates/default_drink.html:7
 msgid "About"
 msgstr "À propos"
 
@@ -113,11 +113,15 @@ msgstr "<strong>AVERTISSEMENT SÉRIEUX :</strong> Ce site internet n'est pas des
 msgid "You may find very valuable advices by visiting the <a href=\"http://www.drinkaware.co.uk/\">Drink Aware</a> website."
 msgstr "Tu peux trouver de bien plus amples informations en allant sur le site <a href=\"http://www.boiretrop.fr/\">Boire Trop</a> (flash requis)."
 
-#: templates/default_drink.html:7
+#: templates/default_drink.html:6
+msgid "Beer"
+msgstr "Bière"
+
+#: templates/default_drink.html:8
 msgid "List of all available drinks"
 msgstr "Liste des boissons disponibles"
 
-#: templates/default_drink.html:8
+#: templates/default_drink.html:9
 msgid "Random Drink"
 msgstr "Boisson aléatoire"
 
