@@ -29,6 +29,7 @@
     <a href="{% url beer_list %}">{% trans "List of all beers available" %}</a> |
     <a href="{% url beer_random %}">{% trans "Random" %}</a>
 </p>
+<p><strong>{% trans "NEW!" %}</strong> {% blocktrans %}If you don't want a beer, just <a href="{{ drink_detail_url }}">offer a regular drink!{% endblocktrans %}</p>
 {% endblock %}
 <p class="copyright">&copy; {% now "Y" %} Bruno Bord, aka No'<br />{% trans "Pictures are property of their authors, and are usually published under a Creative Commons License." %}</p>
 <hr />
