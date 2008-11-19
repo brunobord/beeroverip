@@ -5,6 +5,19 @@ from django.test.client import Client
 from django.conf import settings
 from models import Beer, NotABeer
 
+class TestSettings(TestCase):
+    """Testing settings"""
+
+    def test_middleware_classes(self):
+        """Let's make sure flatpages will be displayed"""
+        self.assertTrue('django.contrib.flatpages.middleware.FlatpageFallbackMiddleware' in settings.MIDDLEWARE_CLASSES)
+
+    def test_context_processors(self):
+        """Let's make sure our context processors are okay."""
+        self.assertTrue('beers.context_processors.analytics_id' in settings.TEMPLATE_CONTEXT_PROCESSORS)
+        self.assertTrue('beers.context_processors.drink_detail_url' in settings.TEMPLATE_CONTEXT_PROCESSORS)
+
+
 class TestBeerUrls(TestCase):
     """We just have to test URLs, by the way..."""
     fixtures = ['data']
