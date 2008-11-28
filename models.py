@@ -38,7 +38,6 @@ class Beer(Drink):
         ordering = ('-upload_date',)
 
 
-
 class NotABeer(Drink):
     """Not-a-Beer model."""
 
@@ -51,5 +50,6 @@ class NotABeer(Drink):
 
     def get_absolute_url(self):
         return '/%s/%s/' % ('notabeer', self.slug)
+
 
 # EOF

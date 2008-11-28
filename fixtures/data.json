@@ -339,5 +339,16 @@
             "name": "XXXX",
             "slug": "xxxx"
         }
-    }
+    },
+    {
+        "pk": 32,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/leffe-radieuse.jpg",
+            "credits": "Leffe Radieuse (8,2°), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-28 22:35:00",
+            "name": "Leffe Radieuse",
+            "slug": "leffe-radieuse"
+        }
+    }    
 ]
