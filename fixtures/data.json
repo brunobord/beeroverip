@@ -350,5 +350,16 @@
             "name": "Leffe Radieuse",
             "slug": "leffe-radieuse"
         }
-    }    
+    },
+    {
+        "pk": 33,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/pilsner-urquell.jpg",
+            "credits": "Pilsner Urquell, a strongly hopped Czech beer, by Nicolas Dufour, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2008-11-28 22:41:00",
+            "name": "Pilsner Urquel",
+            "slug": "pilsner-urquell"
+        }
+    }
 ]
