@@ -383,5 +383,16 @@
             "name": "Leffe Vieille Cuvée",
             "slug": "leffe-vieille-cuvee"
         }
+    },
+    {
+        "pk": 36,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/leffe-brune-2.jpg",
+            "credits": "Leffe Brune (6,5°), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-04 23:11:00",
+            "name": "Leffe Brune (6.5°)",
+            "slug": "leffe-brune-2"
+        }
     }
 ]
