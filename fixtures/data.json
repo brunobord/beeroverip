@@ -361,5 +361,16 @@
             "name": "Pilsner Urquell",
             "slug": "pilsner-urquell"
         }
+    },
+    {
+        "pk": 34,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/leffe-9.jpg",
+            "credits": "Leffe 9 (9,0°), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-04 23:03:00",
+            "name": "Leffe 9°",
+            "slug": "leffe-9"
+        }
     }
 ]
