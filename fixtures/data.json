@@ -372,5 +372,16 @@
             "name": "Leffe 9°",
             "slug": "leffe-9"
         }
+    },
+    {
+        "pk": 35,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/leffe-vieille-cuvee.jpg",
+            "credits": "Leffe Vieille Cuvee (no longer in production) (8,2°), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-04 23:08:00",
+            "name": "Leffe Vieille Cuvée",
+            "slug": "leffe-vieille-cuvee"
+        }
     }
 ]
