@@ -438,5 +438,16 @@
             "name": "Carling",
             "slug": "carling"
         }
+    },
+    {
+        "pk": 41,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/gordon-finest-gold.jpg",
+            "credits": "Gordon Finest Gold, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 19:04:00",
+            "name": "Gordon Finest Gold",
+            "slug": "gordon-finest-gold"
+        }
     }
 ]
