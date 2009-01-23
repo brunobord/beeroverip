@@ -460,5 +460,16 @@
             "name": "Old Speckled Hen",
             "slug": "old-speckled-hen"
         }
+    },
+    {
+        "pk": 43,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/smithwicks.jpg",
+            "credits": "Smithwicks, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 19:07:00",
+            "name": "Smithwicks",
+            "slug": "smithwicks"
+        }
     }
 ]
