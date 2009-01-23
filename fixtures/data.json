@@ -394,5 +394,16 @@
             "name": "Leffe Brune (6.5°)",
             "slug": "leffe-brune-2"
         }
+    },
+    {
+        "pk": 37,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/beamish.jpg",
+            "credits": "Beamish, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 18:56:00",
+            "name": "Beamish",
+            "slug": "beamish"
+        }
     }
 ]
