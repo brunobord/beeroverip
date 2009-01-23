@@ -449,5 +449,16 @@
             "name": "Gordon Finest Gold",
             "slug": "gordon-finest-gold"
         }
+    },
+    {
+        "pk": 42,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/old-speckled-hen.jpg",
+            "credits": "Old Speckled Hen, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 19:06:00",
+            "name": "Old Speckled Hen",
+            "slug": "old-speckled-hen"
+        }
     }
 ]
