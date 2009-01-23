@@ -18,16 +18,24 @@ class TestSettings(TestCase):
         self.assertTrue('beers.context_processors.drink_detail_url' in settings.TEMPLATE_CONTEXT_PROCESSORS)
 
 
+class TestBeerData(TestCase):
+    """Testing data / content"""
+    fixtures = ['data']
+    
+    def test_max_id(self):
+        """Testing if database ID are correct"""
+        max_id = Beer.objects.order_by('-id')[0].id
+        self.assertEquals(Beer.objects.count(), max_id)
+    
+    def test_no_duplicate_slug(self):
+        """Seek for unwanted slug duplicates"""
+        count = Beer.objects.count()
+        slugs = set([slug[0] for slug in Beer.objects.all().values_list('slug')])
+        self.assertEquals(len(slugs), count)
+
 class TestBeerUrls(TestCase):
     """We just have to test URLs, by the way..."""
     fixtures = ['data']
-
-    def test_000(self):
-        "not a test case, just for the user's information"
-        print
-        print "FYI:"
-        print "num. of beers: %s" % Beer.objects.count()
-        print
 
     def test_home(self):
         """Home page.
