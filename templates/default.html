@@ -11,32 +11,67 @@
 {% block styles %}
 <style type="text/css">
     body {
+        background-color: #ddd;
+        font-family: Georgia, Garamond, serif;
+    }
+    #main {
+        width: 70%;
+    	max-width: 800px;
+    	background-color:#f9f9f9;
+    	margin: 2em auto;
+	    padding: 1em;
+    }
+    #drink {
+        text-align: center;
+    }
+    .menu {
+        background-color: #ddd;
+        padding: .5em;
         text-align: center;
     }
     .copyright {
-        font-size: smaller;
+        font-size: .8em;
+        text-align: right;
     }
+    #footer .copyright {
+        font-size: .6em;
+        text-align: left;
+    }
+    A { color: #c7a31a; }
 </style>
 {% endblock %}
 </head>
 <body>
+<div id="main"> <!-- #main -->
+
 {% block content %}
 {% endblock %}
-<div id="footer">
+
+<div id="footer"> <!-- #footer -->
 {% block foot_menu %}
-<p>
+<p class="menu">
     <a href="/about/">{% trans "About" %}</a> |
     <a href="{% url beer_list %}">{% trans "List of all beers available" %}</a> |
-    <a href="{% url beer_random %}">{% trans "Random" %}</a>
+    <a href="{% url beer_random %}">{% trans "Random" %}</a> |
+    <a href="{{ drink_detail_url }}">{% trans "Drink" %}</a>
 </p>
-<p><strong>{% trans "NEW!" %}</strong> {% blocktrans %}If you don't want a beer, just <a href="{{ drink_detail_url }}">offer a regular drink!</a>{% endblocktrans %}</p>
 {% endblock %}
+
 <p class="copyright">&copy; {% now "Y" %} Bruno Bord, aka No'<br />{% trans "Pictures are property of their authors, and are usually published under a Creative Commons License." %}</p>
+
 <hr />
-<p class="copyright">{% blocktrans %}<strong>SERIOUS WARNING:</strong> This website is not about getting pissed. It's just about sending virtual beers to people you like or you want to thank. Please, please don't drink and drive. Please, please don't destroy your brain cells by drinking too much. Please, please, prefer having only one fine beer rather than a dozen pints of cheap donkey piss. Many thanks.{% endblocktrans %}</p>
+
+<p class="copyright">
+{% blocktrans %}<strong>SERIOUS WARNING:</strong> This website is not about getting pissed. It's just about sending virtual beers to people you like or you want to thank. Please, please don't drink and drive. Please, please don't destroy your brain cells by drinking too much. Please, please, prefer having only one fine beer rather than a dozen pints of cheap donkey piss. Many thanks.{% endblocktrans %}
+</p>
+
 <p class="copyright">{% blocktrans %}You may find very valuable advices by visiting the <a href="http://www.drinkaware.co.uk/">Drink Aware</a> website.{% endblocktrans %}</p>
 <p><a href="http://djangoproject.com"><img src="{{ MEDIA_URL }}djangosite.gif" border="0" alt="This is a Django site"/></p>
-</div>
+
+</div> <!-- / #footer -->
+
+
+</div> <!-- / #main -->
 
 {% if ANALYTICS_ID %}
 <!-- Analytics -->
