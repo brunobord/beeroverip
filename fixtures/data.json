@@ -416,5 +416,16 @@
             "name": "Bière des ours (Binchoise)",
             "slug": "biere-des-ours"
         }
+    },
+    {
+        "pk": 39,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/caffreys.jpg",
+            "credits": "Caffrey's, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 19:00:00",
+            "name": "Caffrey's",
+            "slug": "caffreys"
+        }
     }
 ]
