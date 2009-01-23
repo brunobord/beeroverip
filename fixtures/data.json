@@ -405,5 +405,16 @@
             "name": "Beamish",
             "slug": "beamish"
         }
+    },
+    {
+        "pk": 38,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/biere-des-ours.jpg",
+            "credits": "Bière des ours, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 18:58:00",
+            "name": "Bière des ours (Binchoise)",
+            "slug": "biere-des-ours"
+        }
     }
 ]
