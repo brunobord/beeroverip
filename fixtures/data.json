@@ -427,5 +427,16 @@
             "name": "Caffrey's",
             "slug": "caffreys"
         }
+    },
+    {
+        "pk": 40,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/carling.jpg",
+            "credits": "Carling, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-01-23 19:01:00",
+            "name": "Carling",
+            "slug": "carling"
+        }
     }
 ]
