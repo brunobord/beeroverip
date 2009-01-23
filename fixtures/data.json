@@ -471,5 +471,16 @@
             "name": "Smithwicks",
             "slug": "smithwicks"
         }
+    },
+    {
+        "pk": 44,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/blanche-de-chambly.jpg",
+            "credits": "Blanche de Chambly (Unibroue), by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA",
+            "upload_date": "2009-01-23 19:49:00",
+            "name": "Blanche de Chambly",
+            "slug": "blanche-de-chambly"
+        }
     }
 ]
