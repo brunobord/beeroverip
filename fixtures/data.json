@@ -482,5 +482,16 @@
             "name": "Blanche de Chambly",
             "slug": "blanche-de-chambly"
         }
-    }
+    },
+    {
+        "pk": 45,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/grain-d-orge.jpg",
+            "credits": "Grain d'orge, by Bruno Bord, Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-04-04 22:14:00",
+            "name": "Grain d'orge",
+            "slug": "grain-d-orge"
+        }
+    }    
 ]
