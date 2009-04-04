@@ -493,5 +493,16 @@
             "name": "Grain d'orge",
             "slug": "grain-d-orge"
         }
+    },
+    {
+        "pk": 46,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/vieux-bruges.jpg",
+            "credits": "Vieux Bruges, bière blanche, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA",
+            "upload_date": "2009-04-04 22:21:00",
+            "name": "Vieux Bruges",
+            "slug": "vieux-bruges"
+        }
     }    
 ]
