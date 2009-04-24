@@ -504,5 +504,16 @@
             "name": "Vieux Bruges",
             "slug": "vieux-bruges"
         }
-    }    
+    },
+    {
+        "pk": 47,
+        "model": "beers.beer",
+        "fields": {
+            "picture": "beers/belle-vue-kriek.jpg",
+            "credits": "Belle-Vue Kriek, by [puamelia], Creative Commons licensed, CC-BY-SA",
+            "upload_date": "2009-04-24 21:48:00",
+            "name": "Belle-Vue Kriek",
+            "slug": "belle-vue-kriek"
+        }
+    }
 ]
