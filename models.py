@@ -25,7 +25,6 @@ class Drink(models.Model):
         return '/%s/' % self.slug
 
 
-
 class Beer(Drink):
     """Beer model."""
 
@@ -35,8 +34,6 @@ class Beer(Drink):
         ordering = ('slug',)
 
     def _picture(self):
-        pic = self.beerimage_set.order_by('?')[0]
-        print pic
         return self.beerimage_set.order_by('?')[0]
     picture = property(_picture)
 
@@ -52,6 +49,9 @@ class NotABeer(Drink):
     def get_absolute_url(self):
         return '/%s/%s/' % ('notabeer', self.slug)
 
+    def _picture(self):
+        return self.notabeerimage_set.order_by('?')[0]
+    picture = property(_picture)
 
 class DrinkImage(models.Model):
     """Drink image Meta-model.
@@ -81,7 +81,7 @@ class BeerImage(DrinkImage):
     picture = models.ImageField(_('picture'), upload_to='beers/', blank=True)
 
 
-class NotABeerImage(Drink):
+class NotABeerImage(DrinkImage):
     """Image-related information for normal drinks
 
     * `notabeer`: The linked drink.
