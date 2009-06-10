@@ -872,5 +872,23 @@
             "picture": "beers/bourbon2.jpg",
             "upload_date": "2009-06-10 21:55:00"
         }
+    },
+    {
+        "pk": 49,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Mythos",
+            "slug": "mythos"
+        }
+    },
+   {
+        "pk": 50,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Mythos, a greek beer, by Eric Veiras Galisson. Creative Commons licensed BY-SA",
+            "beer": 49,
+            "picture": "beers/mythos.jpg",
+            "upload_date": "2009-06-10 22:01:00"
+        }
     }
 ]
