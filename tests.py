@@ -4,6 +4,7 @@ from django.test import TestCase
 from django.test.client import Client
 from django.conf import settings
 from models import Beer, NotABeer
+from models import BeerImage, NotABeerImage
 
 class TestSettings(TestCase):
     """Testing settings"""
@@ -21,17 +22,18 @@ class TestSettings(TestCase):
 class TestBeerData(TestCase):
     """Testing data / content"""
     fixtures = ['data']
-    
+
     def test_max_id(self):
         """Testing if database ID are correct"""
         max_id = Beer.objects.order_by('-id')[0].id
         self.assertEquals(Beer.objects.count(), max_id)
-    
+
     def test_no_duplicate_slug(self):
         """Seek for unwanted slug duplicates"""
         count = Beer.objects.count()
         slugs = set([slug[0] for slug in Beer.objects.all().values_list('slug')])
         self.assertEquals(len(slugs), count)
+
 
 class TestBeerUrls(TestCase):
     """We just have to test URLs, by the way..."""
@@ -52,17 +54,7 @@ class TestBeerUrls(TestCase):
     def test_media_files(self):
         """Every beer has a picture. This picture should exist."""
         for beer in Beer.objects.all():
-            self.assertNotEquals(beer.picture, "")
-            response = self.client.get(beer.picture.url)
-            self.assertEquals(response.status_code, 200)
-
-    def test_media_file_not_found(self):
-        """If any beer picture file is unknown/missing, it must be an error."""
-        random_beer = Beer.objects.get(pk=1)
-        random_beer.picture = 'unknown/file.jpg'
-        random_beer.save()
-        response = self.client.get(random_beer.picture.url)
-        self.assertNotEquals(response.status_code, 200)
+            self.assertNotEquals(beer.beerimage_set.count(), 0)
 
     def test_data(self):
         """Every beer has to be tested individually."""
@@ -89,29 +81,36 @@ class TestBeerUrls(TestCase):
         self.assertEquals(response.status_code, 200)
 
 
-class TestBeerImages(TestCase):
+class TestMediaFiles(TestCase):
     """Testing image attributes"""
     fixtures = ['data']
 
+    def test_media_file_url(self):
+        """Every media file must exist in its filepath"""
+        for image in BeerImage.objects.all():
+            response = self.client.get(image.picture.url)
+            self.assertEquals(response.status_code, 200)
+
+    def test_media_file_not_found(self):
+        """If any beer picture file is unknown/missing, it must be an error."""
+        random_image = BeerImage.objects.get(pk=1)
+        random_image.picture = 'unknown/file.jpg'
+        random_image.save()
+        response = self.client.get(random_image.picture.url)
+        self.assertNotEquals(response.status_code, 200)
+
     def test_file_existence(self):
-        for beer in Beer.objects.all():
-            self.assertTrue(os.path.isfile(beer.picture.file.name))
+        for image in BeerImage.objects.all():
+            self.assertTrue(os.path.isfile(image.picture.file.name))
 
     def test_image_size(self):
-        for beer in Beer.objects.all():
-            self.assertTrue(max(beer.picture.height, beer.picture.width) <= 500)
+        for image in BeerImage.objects.all():
+            self.assertTrue(max(image.picture.height, image.picture.width) <= 500)
 
 
 class TestNotABeerUrls(TestCase):
     """We just have to test URLs, by the way..."""
     fixtures = ['notabeer']
-
-    def test_000(self):
-        "not a test case, just for the user's information"
-        print
-        print "FYI:"
-        print "num. of drinks: %s" % NotABeer.objects.count()
-        print
 
     def test_home(self):
         """Home page.
@@ -134,10 +133,10 @@ class TestNotABeerUrls(TestCase):
 
     def test_media_file_not_found(self):
         """If any drink picture file is unknown/missing, it must be an error."""
-        random_drink = NotABeer.objects.get(pk=1)
-        random_drink.picture = 'unknown/file.jpg'
-        random_drink.save()
-        response = self.client.get(random_drink.picture.url)
+        random_image = NotABeerImage.objects.get(pk=1)
+        random_image.picture = 'unknown/file.jpg'
+        random_image.save()
+        response = self.client.get(random_image.picture.url)
         self.assertNotEquals(response.status_code, 200)
 
     def test_data(self):

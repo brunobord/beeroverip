@@ -9,4 +9,4 @@ class BeerFlow(Feed):
     description = _("Latest Beers available for IP Transport")
 
     def items(self):
-        return Beer.objects.order_by('-upload_date')[:10]
+        return Beer.objects.order_by('-id')[:10]

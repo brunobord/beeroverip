@@ -3,9 +3,6 @@
         "pk": 1,
         "model": "beers.notabeer",
         "fields": {
-            "picture": "drinks/default.jpg",
-            "credits": "A coffee cup, Bruno Bord - Creative Commons Licensed (CC-BY)",
-            "upload_date": "2008-11-13 22:54:00",
             "name": "Drink",
             "slug": "default"
         }
@@ -14,11 +11,28 @@
         "pk": 2,
         "model": "beers.notabeer",
         "fields": {
-            "picture": "drinks/vittel.jpg",
-            "credits": "A bottle of Vittel, by Nicolas Dufour - Creative Commons Licensed (CC-BY-SA)",
-            "upload_date": "2008-11-13 23:37:00",
             "name": "Vittel",
             "slug": "vittel"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "beers.notabeerimage",
+        "fields": {
+            "notabeer": 1,
+            "picture": "drinks/default.jpg",
+            "credits": "A coffee cup, Bruno Bord - Creative Commons Licensed (CC-BY)",
+            "upload_date": "2008-11-13 22:54:00"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "beers.notabeerimage",
+        "fields": {
+            "notabeer": 2,
+            "picture": "drinks/vittel.jpg",
+            "credits": "A bottle of Vittel, by Nicolas Dufour - Creative Commons Licensed (CC-BY-SA)",
+            "upload_date": "2008-11-13 23:37:00"
         }
     }
 ]
