@@ -12,8 +12,8 @@
 
 <p>{% ifnotequal beer.slug "default" %}{% blocktrans %}more precisely: <em>{{ beer }}</em>{% endblocktrans %}{% endifnotequal %}</p>
 
-{% if beer.credits %}
-    <p class="copyright">{% trans "Credits:" %} {{ beer.credits }}</p>
+{% if beer.picture.credits %}
+    <p class="copyright">{% trans "Credits:" %} {{ beer.picture.credits }}</p>
 {% endif %}
 
 {% endblock %}
