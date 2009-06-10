@@ -890,5 +890,15 @@
             "picture": "beers/mythos.jpg",
             "upload_date": "2009-06-10 22:01:00"
         }
+    },
+   {
+        "pk": 51,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Guiness, by Guillaume Schaeffer. Creative Commons licensed BY-NC-SA",
+            "beer": 7,
+            "picture": "beers/guinness_giz404.jpg",
+            "upload_date": "2009-06-10 22:42:00"
+        }
     }
 ]
