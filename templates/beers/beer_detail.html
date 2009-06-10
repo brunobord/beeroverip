@@ -16,4 +16,5 @@
     <p class="copyright">{% trans "Credits:" %} {{ beer.picture.credits }}</p>
 {% endif %}
 
+<p class="copyright"><a href="{{ beer.get_absolute_url }}">{% blocktrans %}A permalink to "{{ beer }}"{% endblocktrans %}</a></p>
 {% endblock %}
