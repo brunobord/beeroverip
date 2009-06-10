@@ -1,0 +1,20 @@
+[
+    {
+        "pk": <beer_pk>,
+        "model": "beers.beer",
+        "fields": {
+            "name": "<beer name>",
+            "slug": "<beer slug>"
+        }
+    },
+   {
+        "pk": <img_pk>,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "<description>",
+            "beer": <beer_pk>,
+            "picture": "beers/<img_name>.jpg",
+            "upload_date": "<now>"
+        }
+    }
+]
