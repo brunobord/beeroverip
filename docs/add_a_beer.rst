@@ -51,8 +51,34 @@ Please note:
     If the beer is already in the database, you'll just have to note its beer_pk
     and only add the image file to the fixture.
 
-Once the ``beers.json`` is ok, run the tests::
+
+Testing:
+--------
+
+Once the ``beers.json`` is ok, run the tests:
 
 .. code-block: bash
 
     $ python manage.py test beers
+
+Or, run the dev server and check the website:
+
+.. code-block: bash
+
+    $ python manage.py runserver
+
+Commit:
+-------
+
+If necessary, add the name of the contributor in the CONTRIBUTOR file.
+
+Commit your changes:
+
+.. code-block: bash
+
+    $ cd /path/to/application/beers
+    $ bzr add
+    $ bzr commit -m "with a nice commit message"
+
+You may enventually push your changes to Launchpad, if you have a write access
+to a branch.
