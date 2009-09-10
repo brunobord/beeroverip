@@ -900,5 +900,16 @@
             "picture": "beers/guinness_giz404.jpg",
             "upload_date": "2009-06-10 22:42:00"
         }
+    },
+   {
+        "pk": 52,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Pilsner-Urquell underwater, by Pierre Roussel. Creative Commons licensed BY-SA",
+            "beer": 33,
+            "picture": "beers/pilsner-urquell-underwater.jpg",
+            "upload_date": "2009-09-10 17:56:00"
+        }
     }
+    
 ]
