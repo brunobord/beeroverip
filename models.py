@@ -53,6 +53,7 @@ class NotABeer(Drink):
         return self.notabeerimage_set.order_by('?')[0]
     picture = property(_picture)
 
+
 class DrinkImage(models.Model):
     """Drink image Meta-model.
 

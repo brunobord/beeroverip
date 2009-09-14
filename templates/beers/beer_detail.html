@@ -6,14 +6,14 @@
 {% block content %}
 <div id="drink">
     <h1>{% trans "You've just been offered..." %}</h1>
-    <img src="{{ beer.picture.url }}" alt="{{ beer.name }}"/>
+    <img src="{{ picture.url }}" alt="{{ beer.name }}"/>
     <p>{% trans "a Beer over IP" %}</p>
 </div>
 
 <p>{% ifnotequal beer.slug "default" %}{% blocktrans %}more precisely: <em>{{ beer }}</em>{% endblocktrans %}{% endifnotequal %}</p>
 
-{% if beer.picture.credits %}
-    <p class="copyright">{% trans "Credits:" %} {{ beer.picture.credits }}</p>
+{% if picture.credits %}
+    <p class="copyright">{% trans "Credits:" %} {{ picture.credits }}</p>
 {% endif %}
 
 <p class="copyright"><a href="{{ beer.get_absolute_url }}">{% blocktrans %}A permalink to "{{ beer }}"{% endblocktrans %}</a></p>

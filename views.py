@@ -19,7 +19,10 @@ def beer_detail(request, slug=None):
 
     return direct_to_template(request,
         template='beers/beer_detail.html',
-        extra_context={'beer': beer},
+        extra_context={
+            'beer': beer,
+            'picture': beer.picture,
+        },
     )
 
 def beer_random(request):
@@ -43,7 +46,10 @@ def drink_detail(request, slug=None):
 
     return direct_to_template(request,
         template='drinks/drink_detail.html',
-        extra_context={'drink': drink},
+        extra_context={
+            'drink': drink,
+            'picture': drink.picture,
+        },
     )
 
 def drink_list(request):
