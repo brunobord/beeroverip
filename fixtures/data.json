@@ -910,6 +910,61 @@
             "picture": "beers/pilsner-urquell-underwater.jpg",
             "upload_date": "2009-09-10 17:56:00"
         }
+    },
+
+    {
+        "pk": 49,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Pagoa Pilsner",
+            "slug": "pagoa-pilsner"
+        }
+    },
+   {
+        "pk": 53,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Pagoa Pilsner, by Bruno Bord. Creative Commons licensed BY-SA",
+            "beer": 49,
+            "picture": "beers/pagoa-pilsner.jpg",
+            "upload_date": "2009-11-02 21:42"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Pagoa Red Ale",
+            "slug": "pagoa-red-ale"
+        }
+    },
+   {
+        "pk": 54,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Pagoa Red Ale, by Bruno Bord. Creative Commons licensed BY-SA",
+            "beer": 50,
+            "picture": "beers/pagoa-red-ale.jpg",
+            "upload_date": "2009-11-02 21:47"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Pagoa Stout",
+            "slug": "pagoa-stout"
+        }
+    },
+   {
+        "pk": 55,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Pagoa Stout, by Bruno Bord. Creative Commons licensed BY-SA",
+            "beer": 51,
+            "picture": "beers/pagoa-stout.jpg",
+            "upload_date": "2009-11-02 21:49"
+        }
     }
-    
+
 ]
