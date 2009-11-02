@@ -109,7 +109,7 @@ Database stuff
 Everything should be ready now. Then it's a classic::
 
     $ python manage.py syncdb
-    $ python loaddata pages data
+    $ python manage.py loaddata pages data notabeer
 
 Now it's ready! You can test your website by serving it the way you want
 (embedded development server, fcgi, mod_python, etc.)
