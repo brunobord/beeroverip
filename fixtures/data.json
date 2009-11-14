@@ -965,6 +965,24 @@
             "picture": "beers/pagoa-stout.jpg",
             "upload_date": "2009-11-02 21:49"
         }
+    },
+    {
+        "pk": 52,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Affligem",
+            "slug": "affligem"
+        }
+    },
+   {
+        "pk": 56,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Affligem, by 'nagzi'. Creative Commons licensed BY-NC-SA (http://www.flickr.com/photos/nagzi/2750523729/)",
+            "beer": 52,
+            "picture": "beers/affligem.jpg",
+            "upload_date": "2009-11-14 21:02"
+        }
     }
 
 ]
