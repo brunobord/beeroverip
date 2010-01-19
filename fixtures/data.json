@@ -1137,5 +1137,23 @@
             "picture": "beers/young-double-chocolate.jpg",
             "upload_date": "2010-01-19 22:35"
         }
+    },
+    {
+        "pk": 61,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Piraat",
+            "slug": "piraat"
+        }
+    },
+   {
+        "pk": 66,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Piraat, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1722519982/)",
+            "beer": 61,
+            "picture": "beers/piraat.jpg",
+            "upload_date": "2010-01-19 22:37"
+        }
     }
 ]
