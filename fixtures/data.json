@@ -1086,7 +1086,7 @@
         "pk": 62,
         "model": "beers.beerimage",
         "fields": {
-            "credits": "Pauwel Kwak, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1595614982/in/set-72157602040063730/)",
+            "credits": "Pauwel Kwak, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1595614982/)",
             "beer": 58,
             "picture": "beers/kwak.jpg",
             "upload_date": "2010-01-19 22:01"
