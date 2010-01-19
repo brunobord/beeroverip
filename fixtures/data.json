@@ -1119,5 +1119,23 @@
             "picture": "beers/chimay-tripel.jpg",
             "upload_date": "2010-01-19 22:14"
         }
+    },
+    {
+        "pk": 60,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Young Double Chocolate Stout",
+            "slug": "young-double-chocolate"
+        }
+    },
+   {
+        "pk": 65,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Young Double Chocolate Stout, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1722520512/)",
+            "beer": 60,
+            "picture": "beers/young-double-chocolate.jpg",
+            "upload_date": "2010-01-19 22:35"
+        }
     }
 ]
