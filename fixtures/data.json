@@ -1191,5 +1191,23 @@
             "picture": "beers/traquair.jpg",
             "upload_date": "2010-01-19 23:05"
         }
+    },
+    {
+        "pk": 64,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Duchesse de Bourgogne",
+            "slug": "duchesse-de-bourgogne"
+        }
+    },
+   {
+        "pk": 69,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Duchesse de Bourgogne, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2072709140/)",
+            "beer": 64,
+            "picture": "beers/duchesse-de-bourgogne.jpg",
+            "upload_date": "2010-01-19 23:09"
+        }
     }
 ]
