@@ -5,10 +5,26 @@
 
 {% block content %}
 <h1>{% trans "The beer list" %}</h1>
-<ul>
     {% for beer in object_list %}
+    
+    {% ifchanged %}
+        {% if not forloop.first %}
+        </ul>
+        {% endif %}
+    
+        <h2>{{ beer.name|first }}</h2>
+        <ul>
+    {% endifchanged %}
+    
     <li><a href="{% url beer_detail beer.slug %}">{{ beer.name }}</a></li>
+    {% if forloop.last %}
+        </ul>
+    {% endif %}
     {% endfor %}
-    <li><em>{% trans "Special feature:" %}</em> <a href="{% url beer_random %}">{% trans "Random" %}</a></li>
+
+<h2>{% trans "Special feature:" %}</h2>
+<ul>
+    <li><a href="{% url beer_random %}">{% trans "Random" %}</a></li>
 </ul>
+
 {% endblock %}
