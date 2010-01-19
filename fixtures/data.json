@@ -1209,5 +1209,23 @@
             "picture": "beers/duchesse-de-bourgogne.jpg",
             "upload_date": "2010-01-19 23:09"
         }
+    },
+    {
+        "pk": 65,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Celebrator",
+            "slug": "celebrator"
+        }
+    },
+   {
+        "pk": 70,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Celebrator, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2296742402/)",
+            "beer": 65,
+            "picture": "beers/celebrator.jpg",
+            "upload_date": "2010-01-19 23:23"
+        }
     }
 ]
