@@ -1173,5 +1173,23 @@
             "picture": "beers/pike.jpg",
             "upload_date": "2010-01-19 22:51"
         }
+    },
+    {
+        "pk": 63,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Traquair Jacobite Ale",
+            "slug": "traquair"
+        }
+    },
+   {
+        "pk": 68,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Traquair Jacobite Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2071916175/)",
+            "beer": 63,
+            "picture": "beers/traquair.jpg",
+            "upload_date": "2010-01-19 23:05"
+        }
     }
 ]
