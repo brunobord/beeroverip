@@ -1091,5 +1091,15 @@
             "picture": "beers/kwak.jpg",
             "upload_date": "2010-01-19 22:01"
         }
+    },
+   {
+        "pk": 63,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Tripel Karmeliet, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1595615434/)",
+            "beer": 24,
+            "picture": "beers/tripel-karmeliet-2.jpg",
+            "upload_date": "2010-01-19 22:04"
+        }
     }
 ]
