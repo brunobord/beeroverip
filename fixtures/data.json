@@ -1101,5 +1101,23 @@
             "picture": "beers/tripel-karmeliet-2.jpg",
             "upload_date": "2010-01-19 22:04"
         }
+    },
+    {
+        "pk": 59,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Chimay Tripel",
+            "slug": "chimay-tripel"
+        }
+    },
+   {
+        "pk": 64,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Chimay Tripel, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1594727863/)",
+            "beer": 59,
+            "picture": "beers/chimay-tripel.jpg",
+            "upload_date": "2010-01-19 22:14"
+        }
     }
 ]
