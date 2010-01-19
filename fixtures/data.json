@@ -1037,5 +1037,23 @@
             "picture": "beers/crannog.jpg",
             "upload_date": "2010-01-19 21:50"
         }
+    },
+    {
+        "pk": 56,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Blackfriar Scottish Ale",
+            "slug": "blackfriar"
+        }
+    },
+   {
+        "pk": 60,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Blackfriar Scottish Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1465331742/)",
+            "beer": 56,
+            "picture": "beers/blackfriar.jpg",
+            "upload_date": "2010-01-19 21:53"
+        }
     }
 ]
