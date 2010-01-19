@@ -989,7 +989,7 @@
         "model": "beers.beer",
         "fields": {
             "name": "Westmalle Tripel",
-            "slug": "wesmalle"
+            "slug": "westmalle"
         }
     },
    {
