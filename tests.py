@@ -1,10 +1,15 @@
 import os
+
+import logging
+logging.basicConfig(level=logging.CRITICAL)
+
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.test.client import Client
 from django.conf import settings
 from models import Beer, NotABeer
 from models import BeerImage, NotABeerImage
+
 
 class TestSettings(TestCase):
     """Testing settings"""
@@ -106,6 +111,13 @@ class TestMediaFiles(TestCase):
     def test_image_size(self):
         for image in BeerImage.objects.all():
             self.assertTrue(max(image.picture.height, image.picture.width) <= 500)
+
+    def test_file_is_in_images(self):
+        beer_image_path = os.path.join(settings.MEDIA_ROOT, 'beers')
+        for filename in os.listdir(beer_image_path):
+            if filename not in ('404.jpg', ):
+                logging.debug(filename)
+                self.assertTrue(BeerImage.objects.get(picture='beers/%s' % filename))
 
 
 class TestNotABeerUrls(TestCase):
