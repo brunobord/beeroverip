@@ -1055,5 +1055,23 @@
             "picture": "beers/blackfriar.jpg",
             "upload_date": "2010-01-19 21:53"
         }
+    },
+    {
+        "pk": 57,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Brooklyn Lager",
+            "slug": "brooklyn"
+        }
+    },
+   {
+        "pk": 61,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Brooklyn Lager, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1464488143/)",
+            "beer": 57,
+            "picture": "beers/brooklyn.jpg",
+            "upload_date": "2010-01-19 21:56"
+        }
     }
 ]
