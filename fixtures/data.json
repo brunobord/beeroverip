@@ -1019,5 +1019,23 @@
             "picture": "beers/russel-cream-ale.jpg",
             "upload_date": "2010-01-19 21:42"
         }
+    },
+    {
+        "pk": 55,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Crannóg Back Hand of God Stout",
+            "slug": "crannog"
+        }
+    },
+   {
+        "pk": 59,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Crannóg Back Hand of God Stout, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1436911294/)",
+            "beer": 55,
+            "picture": "beers/crannog.jpg",
+            "upload_date": "2010-01-19 21:50"
+        }
     }
 ]
