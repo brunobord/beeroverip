@@ -1001,5 +1001,23 @@
             "picture": "beers/westmalle.jpg",
             "upload_date": "2010-01-19 21:37"
         }
+    },
+    {
+        "pk": 54,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Russel Cream Ale",
+            "slug": "russel-cream-ale"
+        }
+    },
+   {
+        "pk": 58,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Russel Cream Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1436911230/)",
+            "beer": 54,
+            "picture": "beers/russel-cream-ale.jpg",
+            "upload_date": "2010-01-19 21:42"
+        }
     }
 ]
