@@ -1155,5 +1155,23 @@
             "picture": "beers/piraat.jpg",
             "upload_date": "2010-01-19 22:37"
         }
+    },
+    {
+        "pk": 62,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Pike",
+            "slug": "pike"
+        }
+    },
+   {
+        "pk": 67,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Pike IPA, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1923666089/)",
+            "beer": 62,
+            "picture": "beers/pike.jpg",
+            "upload_date": "2010-01-19 22:51"
+        }
     }
 ]
