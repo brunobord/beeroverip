@@ -50,7 +50,7 @@
 <div id="footer"> <!-- #footer -->
 {% block foot_menu %}
 <p class="menu">
-    <a href="/about/">{% trans "About" %}</a> |
+    <a href="{% url about %}">{% trans "About" %}</a> |
     <a href="{% url beer_list %}">{% trans "List of all beers available" %}</a> |
     <a href="{% url beer_random %}">{% trans "Random" %}</a> |
     <a href="{{ drink_detail_url }}">{% trans "Drink" %}</a>
