@@ -175,4 +175,11 @@ class TestNotABeerUrls(TestCase):
         response = self.client.get(reverse('drink_list'))
         self.assertEquals(response.status_code, 200)
 
-# EOF
+
+class TestPagesUrl(TestCase):
+    
+    def test_about(self):
+        """Testing '/about/' url"""
+        response = self.client.get(reverse('about'))
+        self.assertEquals(response.status_code, 200)
+        

@@ -1,16 +1,25 @@
 from django.conf.urls.defaults import *
 
 from models import Beer
-from views import *
 from flows import BeerFlow
 
 flows = {
     'beers': BeerFlow,
 }
 
+# special for RSS
 urlpatterns = patterns('',
     url(r'^flow/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': flows}),
 )
+
+# About page
+about_dict = {
+    'template': 'pages/about.html',
+}
+urlpatterns += patterns('django.views.generic.simple',
+    url(r'^about/', 'direct_to_template', about_dict, name='about'),
+)
+
 
 urlpatterns += patterns('beers.views',
 
