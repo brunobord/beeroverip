@@ -4,7 +4,7 @@
 {% block foot_menu %}
 <p class="menu">
     <a href="/">{% trans "Beer" %}</a> |
-    <a href="/about/">{% trans "About" %}</a> |
+    <a href="{% url about %}">{% trans "About" %}</a> |
     <a href="{% url drink_list %}">{% trans "List of all available drinks" %}</a> |
     <a href="{% url drink_random %}">{% trans "Random Drink" %}</a>
 </p>

@@ -1,0 +1,33 @@
+{% extends "default.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "About" %}</h1>
+<div>
+<p>{% blocktrans %}Beer Over IP is the simplest and easiest way to send a beer to someone over the IP protocol.{% endblocktrans %}
+</p>
+
+<h2>{% blocktrans %}How to use it?{% endblocktrans %}</h2>
+<p>{% blocktrans %}it's as simple as giving someone a link to the main <a href="http://beeroverip.org">Beer over IP website</a>. Your "target" clicks on it and he or she gets instant reward!{% endblocktrans %}
+</p>
+
+<h2>{% blocktrans %}The default beer is nice, but ain't there any other?{% endblocktrans %}</h2>
+<p>{% blocktrans %}Of course! Just go to <a href="http://beeroverip.org/all/">the global list of beers</a> and pick up the one you want to send over IP. You'll get a link to a specific beer that fits your needs. Hence you may send <a href="http://beeroverip.org/stout/">stout to someone!</a>{% endblocktrans %}
+</p>
+<p>{% blocktrans %}Ain't it cool?{% endblocktrans %}
+</p>
+
+<h2>{% blocktrans %}I can't find my favorite beer!{% endblocktrans %}</h2>
+<p>{% blocktrans %}Unfortunately, this website is not a beer anthology (yet). But you could help it by hunting for a Free (as in speech) picture of a beer (Flickr has tons of them) on the web, or take one picture by yourself, and publish it under a Creative Commons License. Once you have:{% endblocktrans %}
+</p>
+<ul>
+ <li>{% blocktrans %}the name of the sort of beer,{% endblocktrans %}</li>
+ <li>{% blocktrans %}a decent picture of it,{% endblocktrans %}</li>
+ <li>{% blocktrans %}a description, and the terms of the license,{% endblocktrans %}</li>
+</ul>
+<p>{% blocktrans %}go straight to <a href="https://bugs.launchpad.net/beeroverip/">the BeerOverIP bug interface</a> and file a bug. The title may be: "new beer: [this sort of beer] could be added to the list". You may proceed by sending links to the picture and texts, or attach files in the bug report.{% endblocktrans %}</p>
+
+<p>{% blocktrans %}If your new beer is a nice candidate and fits the right criteria, it may be added to our database as soon as possible.{% endblocktrans %}</p>
+
+</div>
+{% endblock %}
