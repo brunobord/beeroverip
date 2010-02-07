@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 22:32+0200\n"
-"PO-Revision-Date: 2009-06-10 22:34+0100\n"
+"POT-Creation-Date: 2010-02-07 23:55+0100\n"
+"PO-Revision-Date: 2010-02-08 00:00+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -49,16 +49,16 @@ msgstr "boisson"
 msgid "drinks"
 msgstr "boissons"
 
-#: models.py:62
+#: models.py:63
 msgid "credits"
 msgstr "crédits"
 
-#: models.py:63
+#: models.py:64
 msgid "upload date"
 msgstr "date d'ajout"
 
-#: models.py:81
-#: models.py:91
+#: models.py:82
+#: models.py:92
 msgid "picture"
 msgstr "image"
 
@@ -79,6 +79,7 @@ msgstr "Flux de Bières"
 
 #: templates/default.html:53
 #: templates/default_drink.html:7
+#: templates/pages/about.html:5
 msgid "About"
 msgstr "À propos"
 
@@ -87,7 +88,7 @@ msgid "List of all beers available"
 msgstr "Liste de toutes les bières disponibles"
 
 #: templates/default.html:55
-#: templates/beers/beer_list.html:12
+#: templates/beers/beer_list.html:27
 #: templates/drinks/drink_list.html:12
 msgid "Random"
 msgstr "Aléatoire"
@@ -148,7 +149,7 @@ msgstr "Un lien permanent vers \"%(beer)s\""
 msgid "The beer list"
 msgstr "Liste des bières"
 
-#: templates/beers/beer_list.html:12
+#: templates/beers/beer_list.html:25
 #: templates/drinks/drink_list.html:12
 msgid "Special feature:"
 msgstr "Spécial :"
@@ -175,6 +176,58 @@ msgstr "une Bière via RSS :"
 #, python-format
 msgid "more precisely: <em>%(obj)s</em>"
 msgstr "ou plus précisément: <em>%(obj)s</em>"
+
+#: templates/pages/about.html:7
+msgid "Beer Over IP is the simplest and easiest way to send a beer to someone over the IP protocol."
+msgstr "Beer Over Ip est le moyen le plus simple et le plus efficace pour envoyer une bière à quelqu'un en utilisant le protocole IP."
+
+#: templates/pages/about.html:10
+msgid "How to use it?"
+msgstr "Comment l'utiliser ?"
+
+#: templates/pages/about.html:11
+msgid "it's as simple as giving someone a link to the main <a href=\"http://beeroverip.org\">Beer over IP website</a>. Your \"target\" clicks on it and he or she gets instant reward!"
+msgstr "c'est aussi simple que de donner un lien vers <a href=\"http://beeroverip.org/\">site Beer Over IP</a>. Votre \"cible\" clique sur le lien et hop ! Il ou elle reçoit immédiatement sa récompense !"
+
+#: templates/pages/about.html:14
+msgid "The default beer is nice, but ain't there any other?"
+msgstr "La bière par défaut est bonne, mais y en a-t-il d'autres ?"
+
+#: templates/pages/about.html:15
+msgid "Of course! Just go to <a href=\"http://beeroverip.org/all/\">the global list of beers</a> and pick up the one you want to send over IP. You'll get a link to a specific beer that fits your needs. Hence you may send <a href=\"http://beeroverip.org/stout/\">stout to someone!</a>"
+msgstr "Bien entendu ! Il vous suffit d'aller sur <a href=\"http://beeroverip.org/all/\">la liste complète des bières</a> et de choisir celle que vous voulez envoyer via le protocole IP. Vous pourrez obtenir un lien vers la bière qui vous convient. Ainsi, vous pouvez envoyer <a href=\"http://beeroverip.org/stout/\">une stout</a> à quelqu'un !"
+
+#: templates/pages/about.html:17
+msgid "Ain't it cool?"
+msgstr "C'est cool, non ?"
+
+#: templates/pages/about.html:20
+msgid "I can't find my favorite beer!"
+msgstr "Je ne trouve pas ma bière préférée !"
+
+#: templates/pages/about.html:21
+msgid "Unfortunately, this website is not a beer anthology (yet). But you could help it by hunting for a Free (as in speech) picture of a beer (Flickr has tons of them) on the web, or take one picture by yourself, and publish it under a Creative Commons License. Once you have:"
+msgstr "Malheureusement, ce site n'est pas (encore) une anthologie de la bière. Mais vous pouvez nous aider en partant à la chasse d'une bière dont l'image est libre de droit (Flickr en a des tas) sur le web, ou vous pouvez prendre la photo vous-même, et la publier sous un contrat Creative Commons, par exemple. Une fois que vous avez :"
+
+#: templates/pages/about.html:24
+msgid "the name of the sort of beer,"
+msgstr "le nom de la bière,"
+
+#: templates/pages/about.html:25
+msgid "a decent picture of it,"
+msgstr "une image intéressante de cette bière,"
+
+#: templates/pages/about.html:26
+msgid "a description, and the terms of the license,"
+msgstr "une description, les termes d'utilisation,"
+
+#: templates/pages/about.html:28
+msgid "go straight to <a href=\"https://bugs.launchpad.net/beeroverip/\">the BeerOverIP bug interface</a> and file a bug. The title may be: \"new beer: [this sort of beer] could be added to the list\". You may proceed by sending links to the picture and texts, or attach files in the bug report."
+msgstr "allez droit sur <a href=\"https://bugs.launchpad.net/beeroverip/\">l'interface de bug de BeerOverIP</a> sur launchpad et adressez un bug. Le titre peut ressembler à : \"nouvelle bière : [cette sorte de bière] pourrait être ajoutée\". Vous pouvez ensuite envoyer un lien vers l'image et ses informations, ou attacher le fichier image sur le rapport de bug en question."
+
+#: templates/pages/about.html:30
+msgid "If your new beer is a nice candidate and fits the right criteria, it may be added to our database as soon as possible."
+msgstr "Si votre nouvelle bière est une candidate acceptable, elle sera ajoutée à la base de données aussi vite que possible."
 
 #~ msgid "NEW!"
 #~ msgstr "NOUVEAU !"
