@@ -10,8 +10,3 @@ def analytics_id(request):
     except:
         return {}
 
-
-def drink_detail_url(request):
-    """Returns the named url for 'drink_detail', since
-    blocktrans doesn't allow us to use other templatetags in it."""
-    return {'drink_detail_url': reverse('drink_detail')}

@@ -21,7 +21,6 @@ class TestSettings(TestCase):
     def test_context_processors(self):
         """Let's make sure our context processors are okay."""
         self.assertTrue('beers.context_processors.analytics_id' in settings.TEMPLATE_CONTEXT_PROCESSORS)
-        self.assertTrue('beers.context_processors.drink_detail_url' in settings.TEMPLATE_CONTEXT_PROCESSORS)
 
 
 class TestBeerData(TestCase):

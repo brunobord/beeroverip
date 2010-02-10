@@ -68,7 +68,6 @@ You need them.
     from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
     TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
         'beers.context_processors.analytics_id',
-        'beers.context_processors.drink_detail_url',
     )
 
 Google Analytics
