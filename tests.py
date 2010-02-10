@@ -14,10 +14,6 @@ from models import BeerImage, NotABeerImage
 class TestSettings(TestCase):
     """Testing settings"""
 
-    def test_middleware_classes(self):
-        """Let's make sure flatpages will be displayed"""
-        self.assertTrue('django.contrib.flatpages.middleware.FlatpageFallbackMiddleware' in settings.MIDDLEWARE_CLASSES)
-
     def test_context_processors(self):
         """Let's make sure our context processors are okay."""
         self.assertTrue('beers.context_processors.analytics_id' in settings.TEMPLATE_CONTEXT_PROCESSORS)
