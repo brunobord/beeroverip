@@ -3,11 +3,10 @@ from django.conf.urls.defaults import *
 from models import Beer
 from flows import BeerFlow
 
+# special for RSS
 flows = {
     'beers': BeerFlow,
 }
-
-# special for RSS
 urlpatterns = patterns('',
     url(r'^flow/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': flows}),
 )
@@ -20,6 +19,12 @@ urlpatterns += patterns('django.views.generic.simple',
     url(r'^about/', 'direct_to_template', about_dict, name='about'),
 )
 
+beer_dict = {
+    'queryset': Beer.objects.order_by('name'),
+}
+urlpatterns += patterns('django.views.generic.list_detail',
+    url(r'^all/', 'object_list', beer_dict, name="beer_list"),
+)
 
 urlpatterns += patterns('beers.views',
 
@@ -30,7 +35,6 @@ urlpatterns += patterns('beers.views',
     url(r'^notabeer/(?P<slug>[\w-]+)?', 'drink_detail', name="drink_detail"),
 
     # beers
-    url(r'^all/', 'beer_list', name="beer_list"),
     url(r'^random/', 'beer_random', name="beer_random"),
     url(r'^(?P<slug>[\w-]+)?/?', 'beer_detail'),
     url(r'^(?P<slug>[\w-]+)?/', 'beer_detail', name="beer_detail"),

@@ -4,11 +4,6 @@ from django.views.generic.simple import direct_to_template
 from django.views.generic.list_detail import object_list
 from beers.models import Beer, NotABeer
 
-def beer_list(request):
-    return object_list(request,
-        queryset=Beer.objects.order_by('name'),
-    )
-
 def beer_detail(request, slug=None):
     if not slug:
         slug = "default"
