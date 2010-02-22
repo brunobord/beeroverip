@@ -23,6 +23,11 @@ class Drink(models.Model):
 
     def get_absolute_url(self):
         return '/%s/' % self.slug
+    
+
+    @property
+    def initial(self):
+        return self.name[0]
 
 
 class Beer(Drink):
