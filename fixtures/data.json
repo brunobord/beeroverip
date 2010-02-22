@@ -1245,5 +1245,23 @@
             "picture": "beers/turbodog.jpg",
             "upload_date": "2010-01-19 23:27"
         }
+    },
+    {
+        "pk": 67,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Abbaye des Rocs",
+            "slug": "abbaye-des-rocs"
+        }
+    },
+   {
+        "pk": 72,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Abbaye des Rocs, by Bruno Bord. Creative Commons licensed BY-SA (http://www.flickr.com/photos/brunobord/4365391785/)",
+            "beer": 67,
+            "picture": "beers/abbaye-des-rocs.jpg",
+            "upload_date": "2010-02-22 23:29"
+        }
     }
 ]
