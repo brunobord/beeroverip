@@ -3,6 +3,7 @@ import os
 import logging
 logging.basicConfig(level=logging.CRITICAL)
 
+from django.utils import simplejson
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.test.client import Client
@@ -178,3 +179,23 @@ class TestPagesUrl(TestCase):
         response = self.client.get(reverse('about'))
         self.assertEquals(response.status_code, 200)
         
+
+class TestFixture(TestCase):
+    
+    def setUp(self):
+        self.root = os.path.abspath(os.path.dirname(__file__))
+        self.fixture_dir = os.path.join(self.root, 'fixtures')
+    
+    def test_look_for_beer_duplicate(self):
+        filename = os.path.join(self.fixture_dir, 'data.json')
+        data = simplejson.load(open(filename))
+        raw_keys = [item['pk'] for item in data if item['model'] == 'beers.beer']
+        to_check = []
+        try:
+            for k in raw_keys:
+                if k not in to_check:
+                    to_check.append(k)
+                else:
+                    raise Exception, k
+        except:        
+            assert False, "%s is a duplicate" % k
