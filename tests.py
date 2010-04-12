@@ -179,6 +179,10 @@ class TestPagesUrl(TestCase):
         response = self.client.get(reverse('about'))
         self.assertEquals(response.status_code, 200)
         
+    def test_ascii(self):
+        "The magnificent ASCII beer"
+        response = self.client.get(reverse('ascii'))
+        self.assertEquals(response.status_code, 200)
 
 class TestFixture(TestCase):
     

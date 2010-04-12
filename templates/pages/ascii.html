@@ -1,0 +1,30 @@
+{% extends "default.html" %}
+{% load i18n %}
+
+{% block title %}{{ block.super }} - ASCII BEER {% endblock %}
+
+{% block content %}
+<div id="drink">
+    <h1>{% trans "You've just been offered..." %}</h1>
+    <code>
+    <pre>
+         _.._..,_,_
+        (          )
+         ]~,"-.-~~[
+       .=])' (;  ([
+       | ]:: '    [
+       '=]): .)  ([
+         |:: '    |
+          ~~----~~
+    
+    </pre>
+    </code>
+    <p>{% trans "an ASCII Beer over IP" %}</p>
+</div>
+
+{% if picture.credits %}
+    <p class="copyright">{% trans "Credits:" %} Paul Martin Howard - http://www.ascii-art.de/ascii/ab/beer.txt</p>
+{% endif %}
+
+<p class="copyright"><a href="{% url ascii %}">{% blocktrans %}A permalink to "ASCII BEER"{% endblocktrans %}</a></p>
+{% endblock %}

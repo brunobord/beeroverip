@@ -15,8 +15,12 @@ urlpatterns = patterns('',
 about_dict = {
     'template': 'pages/about.html',
 }
+ascii_dict = {
+    'template': 'pages/ascii.html',
+}
 urlpatterns += patterns('django.views.generic.simple',
     url(r'^about/', 'direct_to_template', about_dict, name='about'),
+    url(r'^ascii/', 'direct_to_template', ascii_dict, name='ascii'),
 )
 
 beer_dict = {
