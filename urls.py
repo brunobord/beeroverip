@@ -39,7 +39,7 @@ urlpatterns += patterns('beers.views',
     url(r'^notabeer/(?P<slug>[\w-]+)?', 'drink_detail', name="drink_detail"),
 
     # beers
-    url(r'^random/', 'beer_random', name="beer_random"),
-    url(r'^(?P<slug>[\w-]+)?/?', 'beer_detail'),
-    url(r'^(?P<slug>[\w-]+)?/', 'beer_detail', name="beer_detail"),
+    url(r'^random/$', 'beer_random', name="beer_random"),
+    url(r'^$', 'beer_detail'),
+    url(r'^(?P<slug>[\w-]+)/', 'beer_detail', name="beer_detail"),
 )

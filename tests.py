@@ -70,6 +70,11 @@ class TestBeerUrls(TestCase):
         """The random view should return a beer view"""
         response = self.client.get(reverse('beer_random'))
         self.assertEquals(response.status_code, 200)
+    
+    def test_random_404(self):
+        "The /random (no end slash) should not be a 404"
+        response = self.client.get('/random')
+        self.assertRedirects(response, reverse('beer_random'), status_code=301)
 
     def test_rss_flow(self):
         """Testing the RSS flow"""
