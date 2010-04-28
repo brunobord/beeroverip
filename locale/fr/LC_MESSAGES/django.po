@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-07 23:55+0100\n"
-"PO-Revision-Date: 2010-02-08 00:00+0100\n"
+"POT-Creation-Date: 2010-04-28 20:59+0200\n"
+"PO-Revision-Date: 2010-04-28 21:00+0100\n"
 "Last-Translator: Bruno Bord\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "MIME-Version: 1.0\n"
@@ -33,32 +33,32 @@ msgstr "nom"
 msgid "slug"
 msgstr "slug"
 
-#: models.py:32
+#: models.py:37
 msgid "beer"
 msgstr "bière"
 
-#: models.py:33
+#: models.py:38
 msgid "beers"
 msgstr "bières"
 
-#: models.py:45
+#: models.py:50
 msgid "drink"
 msgstr "boisson"
 
-#: models.py:46
+#: models.py:51
 msgid "drinks"
 msgstr "boissons"
 
-#: models.py:63
+#: models.py:68
 msgid "credits"
 msgstr "crédits"
 
-#: models.py:64
+#: models.py:69
 msgid "upload date"
 msgstr "date d'ajout"
 
-#: models.py:82
-#: models.py:92
+#: models.py:87
+#: models.py:97
 msgid "picture"
 msgstr "image"
 
@@ -70,6 +70,7 @@ msgstr "Bière introuvable..."
 #: templates/beers/beer_detail.html:16
 #: templates/drinks/drink_detail.html:13
 #: templates/feeds/beers_description.html:7
+#: templates/pages/ascii.html:26
 msgid "Credits:"
 msgstr "Crédits :"
 
@@ -88,7 +89,7 @@ msgid "List of all beers available"
 msgstr "Liste de toutes les bières disponibles"
 
 #: templates/default.html:55
-#: templates/beers/beer_list.html:27
+#: templates/beers/beer_list.html:23
 #: templates/drinks/drink_list.html:12
 msgid "Random"
 msgstr "Aléatoire"
@@ -127,6 +128,7 @@ msgstr "Boisson aléatoire"
 
 #: templates/beers/beer_detail.html:8
 #: templates/drinks/drink_detail.html:8
+#: templates/pages/ascii.html:8
 msgid "You've just been offered..."
 msgstr "On vient de t'offrir..."
 
@@ -149,7 +151,7 @@ msgstr "Un lien permanent vers \"%(beer)s\""
 msgid "The beer list"
 msgstr "Liste des bières"
 
-#: templates/beers/beer_list.html:25
+#: templates/beers/beer_list.html:21
 #: templates/drinks/drink_list.html:12
 msgid "Special feature:"
 msgstr "Spécial :"
@@ -228,6 +230,14 @@ msgstr "allez droit sur <a href=\"https://bugs.launchpad.net/beeroverip/\">l'int
 #: templates/pages/about.html:30
 msgid "If your new beer is a nice candidate and fits the right criteria, it may be added to our database as soon as possible."
 msgstr "Si votre nouvelle bière est une candidate acceptable, elle sera ajoutée à la base de données aussi vite que possible."
+
+#: templates/pages/ascii.html:22
+msgid "an ASCII Beer over IP"
+msgstr "une Bière Sur IP en ASCII"
+
+#: templates/pages/ascii.html:29
+msgid "A permalink to \"ASCII BEER\""
+msgstr "Un lien permanent vers \"ASCII BEER\""
 
 #~ msgid "NEW!"
 #~ msgstr "NOUVEAU !"
