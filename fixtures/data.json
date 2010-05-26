@@ -3116,5 +3116,15 @@
             "picture": "beers/blanche-de-re.jpg", 
             "upload_date": "2010-05-26 22:33:00"
         }
+    }, 
+    {
+        "pk": 184, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Blanche de Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "beer": 161, 
+            "picture": "beers/blanche-de-re-2.jpg", 
+            "upload_date": "2010-05-26 22:35:00"
+        }
     }
 ]
