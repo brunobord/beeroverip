@@ -3210,5 +3210,15 @@
             "picture": "beers/barbar-2.jpg", 
             "upload_date": "2010-05-26 23:12:00"
         }
+    }, 
+    {
+        "pk": 191, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Old Speckled Hen, by Bruno Renié - Creative Commons Licensed - CC-BY", 
+            "beer": 42, 
+            "picture": "beers/old-speckled-hen-2.jpg", 
+            "upload_date": "2010-05-26 23:29:00"
+        }
     }
 ]
