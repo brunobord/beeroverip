@@ -3172,5 +3172,15 @@
             "picture": "beers/berliner-pilsner.jpg", 
             "upload_date": "2010-05-26 22:51:00"
         }
+    },
+    {
+        "pk": 188, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Duvel, par Benoît Chesneau - Public Domain", 
+            "beer": 155, 
+            "picture": "beers/duvel-2.jpg", 
+            "upload_date": "2010-05-26 22:59:00"
+        }
     }
 ]
