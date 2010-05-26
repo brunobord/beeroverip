@@ -3200,5 +3200,15 @@
             "picture": "beers/triple-moine.jpg", 
             "upload_date": "2010-05-26 23:05:00"
         }
+    }, 
+    {
+        "pk": 190, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Barbar, par Benoît Chesneau - Public Domain", 
+            "beer": 10, 
+            "picture": "beers/barbar-2.jpg", 
+            "upload_date": "2010-05-26 23:12:00"
+        }
     }
 ]
