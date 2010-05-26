@@ -3098,5 +3098,23 @@
             "picture": "beers/westmalle-tripel.jpg", 
             "upload_date": "2010-05-16 01:59:59"
         }
+    },
+    {
+        "pk": 161, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Blanche de Ré", 
+            "slug": "blanche-de-re"
+        }
+    }, 
+    {
+        "pk": 183, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Blanche de Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "beer": 161, 
+            "picture": "beers/blanche-de-re.jpg", 
+            "upload_date": "2010-05-26 22:33:00"
+        }
     }
 ]
