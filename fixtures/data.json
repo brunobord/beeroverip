@@ -3111,7 +3111,7 @@
         "pk": 183, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Blanche de Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "credits": "Blanche de Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
             "beer": 161, 
             "picture": "beers/blanche-de-re.jpg", 
             "upload_date": "2010-05-26 22:33:00"
@@ -3121,7 +3121,7 @@
         "pk": 184, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Blanche de Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "credits": "Blanche de Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
             "beer": 161, 
             "picture": "beers/blanche-de-re-2.jpg", 
             "upload_date": "2010-05-26 22:35:00"
@@ -3139,7 +3139,7 @@
         "pk": 185, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Blanche Amb'Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "credits": "Blanche Amb'Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
             "beer": 162, 
             "picture": "beers/blanche-amb-re.jpg", 
             "upload_date": "2010-05-26 22:39:00"
@@ -3149,7 +3149,7 @@
         "pk": 186, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Blanche Amb'Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "credits": "Blanche Amb'Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
             "beer": 162, 
             "picture": "beers/blanche-amb-re-2.jpg", 
             "upload_date": "2010-05-26 22:39:00"
@@ -3167,7 +3167,7 @@
         "pk": 187, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Berliner Pilsner, par Benoît Chesneau - Public Domain", 
+            "credits": "Berliner Pilsner, by Benoît Chesneau - Public Domain", 
             "beer": 163, 
             "picture": "beers/berliner-pilsner.jpg", 
             "upload_date": "2010-05-26 22:51:00"
@@ -3177,7 +3177,7 @@
         "pk": 188, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Duvel, par Benoît Chesneau - Public Domain", 
+            "credits": "Duvel, by Benoît Chesneau - Public Domain", 
             "beer": 155, 
             "picture": "beers/duvel-2.jpg", 
             "upload_date": "2010-05-26 22:59:00"
@@ -3195,7 +3195,7 @@
         "pk": 189, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Triple Moine, par Benoît Chesneau - Public Domain", 
+            "credits": "Triple Moine, by Benoît Chesneau - Public Domain", 
             "beer": 164, 
             "picture": "beers/triple-moine.jpg", 
             "upload_date": "2010-05-26 23:05:00"
@@ -3205,7 +3205,7 @@
         "pk": 190, 
         "model": "beers.beerimage", 
         "fields": {
-            "credits": "Barbar, par Benoît Chesneau - Public Domain", 
+            "credits": "Barbar, by Benoît Chesneau - Public Domain", 
             "beer": 10, 
             "picture": "beers/barbar-2.jpg", 
             "upload_date": "2010-05-26 23:12:00"
