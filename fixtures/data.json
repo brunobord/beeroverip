@@ -3182,5 +3182,23 @@
             "picture": "beers/duvel-2.jpg", 
             "upload_date": "2010-05-26 22:59:00"
         }
+    },
+    {
+        "pk": 164, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Triple Moine", 
+            "slug": "triple-moine"
+        }
+    }, 
+    {
+        "pk": 189, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Triple Moine, par Benoît Chesneau - Public Domain", 
+            "beer": 164, 
+            "picture": "beers/triple-moine.jpg", 
+            "upload_date": "2010-05-26 23:05:00"
+        }
     }
 ]
