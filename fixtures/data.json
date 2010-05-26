@@ -3127,4 +3127,34 @@
             "upload_date": "2010-05-26 22:35:00"
         }
     }
+    
+    ,
+    {
+        "pk": 162, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Blanche Amb'Ré", 
+            "slug": "blanche-amb-re"
+        }
+    }, 
+    {
+        "pk": 185, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Blanche Amb'Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "beer": 162, 
+            "picture": "beers/blanche-amb-re.jpg", 
+            "upload_date": "2010-05-26 22:39:00"
+        }
+    }, 
+    {
+        "pk": 186, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Blanche Amb'Ré, par Eric Veiras Galisson - Creative Commons Licensed BY-SA", 
+            "beer": 162, 
+            "picture": "beers/blanche-amb-re-2.jpg", 
+            "upload_date": "2010-05-26 22:39:00"
+        }
+    }
 ]
