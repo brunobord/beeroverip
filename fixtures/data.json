@@ -3126,9 +3126,7 @@
             "picture": "beers/blanche-de-re-2.jpg", 
             "upload_date": "2010-05-26 22:35:00"
         }
-    }
-    
-    ,
+    },
     {
         "pk": 162, 
         "model": "beers.beer", 
@@ -3155,6 +3153,24 @@
             "beer": 162, 
             "picture": "beers/blanche-amb-re-2.jpg", 
             "upload_date": "2010-05-26 22:39:00"
+        }
+    },
+    {
+        "pk": 163, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Berliner Pilsner", 
+            "slug": "berliner-pilsner"
+        }
+    }, 
+    {
+        "pk": 187, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Berliner Pilsner, par Benoît Chesneau - Public Domain", 
+            "beer": 163, 
+            "picture": "beers/berliner-pilsner.jpg", 
+            "upload_date": "2010-05-26 22:51:00"
         }
     }
 ]
