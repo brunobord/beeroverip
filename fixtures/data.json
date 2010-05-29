@@ -3220,5 +3220,41 @@
             "picture": "beers/old-speckled-hen-2.jpg", 
             "upload_date": "2010-05-26 23:29:00"
         }
+    },
+    {
+        "pk": 165, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Rothaus", 
+            "slug": "rothaus"
+        }
+    }, 
+    {
+        "pk": 192, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Rothaus, by Benoît Chesneau - Public Domain", 
+            "beer": 165, 
+            "picture": "beers/rothaus.jpg", 
+            "upload_date": "2010-05-29 12:22:00"
+        }
+    },
+    {
+        "pk": 166, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Franzishkaner", 
+            "slug": "franzishkaner"
+        }
+    }, 
+    {
+        "pk": 193, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Franzishkaner, by Benoît Chesneau - Public Domain", 
+            "beer": 166, 
+            "picture": "beers/franzishkaner.jpg", 
+            "upload_date": "2010-05-29 12:23:00"
+        }
     }
 ]
