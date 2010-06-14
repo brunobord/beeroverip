@@ -3274,5 +3274,23 @@
             "picture": "beers/brewdog_lager.jpg", 
             "upload_date": "2010-06-14 22:13:00"
         }
+    },
+    {
+        "pk": 168, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Carolus", 
+            "slug": "carolus"
+        }
+    }, 
+    {
+        "pk": 195, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Carolus, by Bruno Bord - CC-BY-SA", 
+            "beer": 168, 
+            "picture": "beers/carolus.jpg", 
+            "upload_date": "2010-06-14 22:40:00"
+        }
     }
 ]
