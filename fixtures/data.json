@@ -3256,5 +3256,23 @@
             "picture": "beers/franzishkaner.jpg", 
             "upload_date": "2010-05-29 12:23:00"
         }
+    },
+    {
+        "pk": 167, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Brewdog 77 Lager", 
+            "slug": "brewdog-lager"
+        }
+    }, 
+    {
+        "pk": 194, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Brewdog 77 Lager, by Chris Nicolson - CC-BY-NC", 
+            "beer": 167, 
+            "picture": "beers/brewdog_lager.jpg", 
+            "upload_date": "2010-06-14 22:13:00"
+        }
     }
 ]
