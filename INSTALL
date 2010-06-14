@@ -36,8 +36,6 @@ Many parameters need to be changed or added to deliver Beer Over IP. Edit your
   directory which is inside your project directory (website). You may want to
   serve it using a lightweight HTTP server. More on `static file serving`_ in the
   Django docs.
-* Add `'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'` to your
-  `MIDDLEWARE_CLASSES` variable.
 
 
 .. _database configuration: http://www.djangoproject.com/documentation/0.96/tutorial01/#database-setup
