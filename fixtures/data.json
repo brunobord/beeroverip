@@ -3292,5 +3292,24 @@
             "picture": "beers/carolus.jpg", 
             "upload_date": "2010-06-14 22:40:00"
         }
+    },
+        {
+        "pk": 169,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Brewdog 77 Lager",
+            "slug": "brewdog-77-lager"
+        }
+    },
+   {
+        "pk": 196,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Brewdow 77 Lager, by Chris Nicolson (Creative Commons licensed - CC-BY-NC)",
+            "beer": 169,
+            "picture": "beers/brewdog-77-lager.jpg",
+            "upload_date": "2010-07-28 21:36"
+        }
     }
+
 ]
