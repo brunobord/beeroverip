@@ -3292,5 +3292,23 @@
             "picture": "beers/carolus.jpg", 
             "upload_date": "2010-06-14 22:40:00"
         }
+    },
+    {
+        "pk": 169, 
+        "model": "beers.beer", 
+        "fields": {
+            "name": "Saint Rieul Blonde",
+            "slug": "st-rieul-blonde"
+        }
+    }, 
+    {
+        "pk": 196, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "St Rieul Blonde, by Pierre Roussel - CC-BY-NC-ND", 
+            "beer": 169, 
+            "picture": "beers/st-rieul-blonde.jpg", 
+            "upload_date": "2010-11-09 21:35:00"
+        }
     }
 ]
