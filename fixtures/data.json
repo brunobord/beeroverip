@@ -3310,5 +3310,15 @@
             "picture": "beers/st-rieul-blonde.jpg", 
             "upload_date": "2010-11-09 21:35:00"
         }
+    },
+    {
+        "pk": 197, 
+        "model": "beers.beerimage", 
+        "fields": {
+            "credits": "Monty Python's Holy Grail Ale, by Olivier Meunier - CC-BY-NC", 
+            "beer": 23, 
+            "picture": "beers/holy-grail.jpg", 
+            "upload_date": "2010-12-20 21:49:00"
+        }
     }
 ]
