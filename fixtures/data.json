@@ -3392,5 +3392,23 @@
             "picture": "beers/sant-erwann.jpg",
             "upload_date": "2011-07-23 23:01:00"
         }
+    },
+    {
+        "pk": 174,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Gwiniz Du",
+            "slug": "gwiniz-du"
+        }
+    },
+   {
+        "pk": 202,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Gwiniz Du, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 174,
+            "picture": "beers/gwiniz-du.jpg",
+            "upload_date": "2011-07-23 23:10:00"
+        }
     }
 ]
