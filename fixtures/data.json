@@ -3428,5 +3428,23 @@
             "picture": "beers/celtika.jpg",
             "upload_date": "2011-07-23 23:12:00"
         }
+    },
+    {
+        "pk": 176,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Britt Blanche",
+            "slug": "britt-blanche"
+        }
+    },
+   {
+        "pk": 204,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Britt Blanche, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 176,
+            "picture": "beers/britt-blanche.jpg",
+            "upload_date": "2011-07-23 23:14:00"
+        }
     }
 ]
