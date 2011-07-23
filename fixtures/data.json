@@ -3338,5 +3338,24 @@
             "picture": "beers/alienor.jpg",
             "upload_date": "2011-07-23 22:43:00"
         }
+    },
+    {
+        "pk": 171,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Dremmwel",
+            "slug": "dremmwel"
+        }
+    },
+   {
+        "pk": 199,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Dremmwel, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 171,
+            "picture": "beers/dremmwel.jpg",
+            "upload_date": "2011-07-23 22:54:00"
+        }
     }
+    
 ]
