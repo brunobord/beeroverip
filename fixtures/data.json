@@ -3320,5 +3320,23 @@
             "picture": "beers/holy-grail.jpg", 
             "upload_date": "2010-12-20 21:49:00"
         }
+    },
+    {
+        "pk": 170,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Aliénor",
+            "slug": "alienor"
+        }
+    },
+   {
+        "pk": 198,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Aliénor, bière de Saint-Caprais de Bordeaux, by Bruno Bord - CC-BY-SA",
+            "beer": 170,
+            "picture": "beers/alienor.jpg",
+            "upload_date": "2011-07-23 22:43:00"
+        }
     }
 ]
