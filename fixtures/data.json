@@ -3410,5 +3410,23 @@
             "picture": "beers/gwiniz-du.jpg",
             "upload_date": "2011-07-23 23:10:00"
         }
+    },
+    {
+        "pk": 175,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Celtika",
+            "slug": "celtika"
+        }
+    },
+   {
+        "pk": 203,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Celtika, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 175,
+            "picture": "beers/celtika.jpg",
+            "upload_date": "2011-07-23 23:12:00"
+        }
     }
 ]
