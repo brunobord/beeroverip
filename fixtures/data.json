@@ -3374,5 +3374,23 @@
             "picture": "beers/britt-rousse.jpg",
             "upload_date": "2011-07-23 22:58:00"
         }
+    },
+    {
+        "pk": 173,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Sant Erwann",
+            "slug": "sant-erwann"
+        }
+    },
+   {
+        "pk": 201,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Sant Erwann, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 173,
+            "picture": "beers/sant-erwann.jpg",
+            "upload_date": "2011-07-23 23:01:00"
+        }
     }
 ]
