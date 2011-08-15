@@ -3446,5 +3446,23 @@
             "picture": "beers/britt-blanche.jpg",
             "upload_date": "2011-07-23 23:14:00"
         }
+    },
+    {
+        "pk": 177,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Asahi",
+            "slug": "asahi"
+        }
+    },
+   {
+        "pk": 205,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Asahi, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 177,
+            "picture": "beers/asahi.jpg",
+            "upload_date": "2011-08-15 22:27:00"
+        }
     }
 ]
