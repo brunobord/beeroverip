@@ -8,4 +8,3 @@ def analytics_id(request):
         return {'ANALYTICS_ID': settings.ANALYTICS_ID}
     except:
         return {}
-

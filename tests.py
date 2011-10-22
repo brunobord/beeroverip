@@ -6,7 +6,7 @@ logging.basicConfig(level=logging.CRITICAL)
 from django.utils import simplejson
 from django.core.urlresolvers import reverse
 from django.test import TestCase
-from django.test.client import Client
+# from django.test.client import Client
 from django.conf import settings
 from models import Beer, NotABeer
 from models import BeerImage, NotABeerImage
@@ -70,7 +70,7 @@ class TestBeerUrls(TestCase):
         """The random view should return a beer view"""
         response = self.client.get(reverse('beer_random'))
         self.assertEquals(response.status_code, 200)
-    
+
     def test_random_404(self):
         "The /random (no end slash) should not be a 404"
         response = self.client.get('/random')
@@ -178,23 +178,24 @@ class TestNotABeerUrls(TestCase):
 
 
 class TestPagesUrl(TestCase):
-    
+
     def test_about(self):
         """Testing '/about/' url"""
         response = self.client.get(reverse('about'))
         self.assertEquals(response.status_code, 200)
-        
+
     def test_ascii(self):
         "The magnificent ASCII beer"
         response = self.client.get(reverse('ascii'))
         self.assertEquals(response.status_code, 200)
 
+
 class TestFixture(TestCase):
-    
+
     def setUp(self):
         self.root = os.path.abspath(os.path.dirname(__file__))
         self.fixture_dir = os.path.join(self.root, 'fixtures')
-    
+
     def test_look_for_beer_duplicate(self):
         filename = os.path.join(self.fixture_dir, 'data.json')
         data = simplejson.load(open(filename))
@@ -205,6 +206,6 @@ class TestFixture(TestCase):
                 if k not in to_check:
                     to_check.append(k)
                 else:
-                    raise Exception, k
-        except:        
+                    raise Exception(k)
+        except:
             assert False, "%s is a duplicate" % k

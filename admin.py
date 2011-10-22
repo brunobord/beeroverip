@@ -1,6 +1,7 @@
 from beers.models import Beer, BeerImage
 from django.contrib import admin
 
+
 class BeerImageInline(admin.StackedInline):
     model = BeerImage
 
@@ -14,4 +15,3 @@ class BeerOptions(admin.ModelAdmin):
 
 
 admin.site.register(Beer, BeerOptions)
-

@@ -1,6 +1,4 @@
-import os.path
 import datetime
-import random
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -10,7 +8,7 @@ class Drink(models.Model):
 
     * `name`: name of the beer, to be displayed.
     * `slug`: prepopulated from `name`.
-	"""
+    """
 
     name = models.CharField(_('name'), max_length=100)
     slug = models.SlugField(_('slug'), max_length=100)
@@ -23,7 +21,6 @@ class Drink(models.Model):
 
     def get_absolute_url(self):
         return '/%s/' % self.slug
-    
 
     @property
     def initial(self):

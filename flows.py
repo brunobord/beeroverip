@@ -2,6 +2,7 @@ from django.contrib.syndication.feeds import Feed
 from django.utils.translation import ugettext_lazy as _
 from models import Beer
 
+
 class BeerFlow(Feed):
     """Basic beer flow."""
     title = _("Beer flow, latest")
