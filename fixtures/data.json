@@ -3528,5 +3528,23 @@
             "picture": "beers/yophe.jpg",
             "upload_date": "2011-10-22 15:21:00"
         }
+    },
+    {
+        "pk": 181,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Kvas Taras",
+            "slug": "kvas-taras"
+        }
+    },
+   {
+        "pk": 210,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Kvas Taras, Ukranian beer, by Benoît Chesneau - Public Domain",
+            "beer": 181,
+            "picture": "beers/kvas-taras.jpg",
+            "upload_date": "2011-10-22 22:36:00"
+        }
     }    
 ]
