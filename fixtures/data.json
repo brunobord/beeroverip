@@ -3510,6 +3510,23 @@
             "picture": "beers/sergas.jpg",
             "upload_date": "2011-09-23 22:31:00"
         }
-    }
-    
+    },
+    {
+        "pk": 180,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Yophe",
+            "slug": "yophe"
+        }
+    },
+   {
+        "pk": 209,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Yophe, Ukranian beer, by Benoît Chesneau - Public Domain",
+            "beer": 180,
+            "picture": "beers/yophe.jpg",
+            "upload_date": "2011-10-22 15:21:00"
+        }
+    }    
 ]
