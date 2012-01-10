@@ -3546,5 +3546,23 @@
             "picture": "beers/kvas-taras.jpg",
             "upload_date": "2011-10-22 22:36:00"
         }
-    }    
+    },
+    {
+        "pk": 182,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Grottenbier",
+            "slug": "grottenbier"
+        }
+    },
+   {
+        "pk": 211,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Grottenbier, by Gaël Pasgrimaud - Beerware License",
+            "beer": 182,
+            "picture": "beers/grottenbier.jpg",
+            "upload_date": "2012-01-10 21:54:00"
+        }
+    }
 ]
