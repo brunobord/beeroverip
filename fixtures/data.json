@@ -3582,5 +3582,23 @@
             "picture": "beers/oyster.jpg",
             "upload_date": "2012-04-29 21:47:00"
         }
+    },
+        {
+        "pk": 184,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Pilsner",
+            "slug": "pilsner"
+        }
+    },
+   {
+        "pk": 213,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Pilsner, by Richard Moch - CC-BY-NC",
+            "beer": 184,
+            "picture": "beers/pilsner.jpg",
+            "upload_date": "2012-04-29 22:00:00"
+        }
     }
 ]
