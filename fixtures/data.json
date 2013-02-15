@@ -3636,5 +3636,23 @@
             "picture": "beers/mascaret-blanche.jpg",
             "upload_date": "2013-02-15 22:10:00"
         }
+    },
+        {
+        "pk": 187,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Dremmwel stout",
+            "slug": "dremmwel-stout"
+        }
+    },
+   {
+        "pk": 216,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Dremmwel stout, bière noire de Bretagne, by Pierre Roussel - CC-BY",
+            "beer": 187,
+            "picture": "beers/dremmwel-stout.jpg",
+            "upload_date": "2013-02-15 22:29:00"
+        }
     }
 ]
