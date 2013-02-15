@@ -3618,5 +3618,23 @@
             "picture": "beers/cuvee-des-trolls.jpg",
             "upload_date": "2013-02-15 22:06:00"
         }
+    },
+        {
+        "pk": 186,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Mascaret blanche",
+            "slug": "mascaret-blanche"
+        }
+    },
+   {
+        "pk": 215,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Mascaret Blanche, bière de Gironde, by Pierre Roussel - CC-BY",
+            "beer": 186,
+            "picture": "beers/mascaret-blanche.jpg",
+            "upload_date": "2013-02-15 22:10:00"
+        }
     }
 ]
