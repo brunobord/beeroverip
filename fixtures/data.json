@@ -3664,5 +3664,23 @@
             "picture": "beers/gwiniz-du-2.jpg",
             "upload_date": "2011-02-15 22:36:00"
         }
+    },
+        {
+        "pk": 188,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Levrette bio",
+            "slug": "levrette-bio"
+        }
+    },
+   {
+        "pk": 218,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Levrette Bio, by Pierre Roussel - CC-BY",
+            "beer": 188,
+            "picture": "beers/levrette-bio.jpg",
+            "upload_date": "2013-02-15 23:05:00"
+        }
     }
 ]
