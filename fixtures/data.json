@@ -3600,5 +3600,23 @@
             "picture": "beers/pilsner.jpg",
             "upload_date": "2012-04-29 22:00:00"
         }
+    },
+        {
+        "pk": 185,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Cuvée des Trolls",
+            "slug": "cuvee-des-trolls"
+        }
+    },
+   {
+        "pk": 214,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Cuvée des Trolls, by Pierre Roussel - CC-BY",
+            "beer": 185,
+            "picture": "beers/cuvee-des-trolls.jpg",
+            "upload_date": "2013-02-15 22:06:00"
+        }
     }
 ]
