@@ -3709,7 +3709,7 @@
             "slug": "kasteel-rouge"
         }
     },
-   {
+    {
         "pk": 220,
         "model": "beers.beerimage",
         "fields": {
@@ -3727,7 +3727,7 @@
             "slug": "st-pierre-myrtille"
         }
     },
-   {
+    {
         "pk": 221,
         "model": "beers.beerimage",
         "fields": {
@@ -3735,6 +3735,24 @@
             "beer": 191,
             "picture": "beers/st-pierre-myrtille.jpg",
             "upload_date": "2014-03-31 22:24:00"
+        }
+    },
+    {
+        "pk": 192,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Victory Hop Devil IPA",
+            "slug": "victory-hop-devil-ipa"
+        }
+    },
+    {
+        "pk": 222,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Victory Hop Devil IPA, by David Paccoud - CC-BY-SA",
+            "beer": 192,
+            "picture": "beers/hop-devil-ipa.jpg",
+            "upload_date": "2014-03-31 22:33:00"
         }
     }
 ]
