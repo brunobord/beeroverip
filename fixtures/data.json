@@ -3700,5 +3700,23 @@
             "picture": "beers/hercule.jpg",
             "upload_date": "2014-03-31 22:09:00"
         }
+    },
+    {
+        "pk": 190,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Kasteel Rouge",
+            "slug": "kasteel-rouge"
+        }
+    },
+   {
+        "pk": 220,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Kaastel Rouge, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 190,
+            "picture": "beers/kasteel-rouge.jpg",
+            "upload_date": "2014-03-31 22:19:00"
+        }
     }
 ]
