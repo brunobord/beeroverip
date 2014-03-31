@@ -3790,5 +3790,23 @@
             "picture": "beers/corsendonk-brune.jpg",
             "upload_date": "2014-03-31 22:52:00"
         }
+    },
+    {
+        "pk": 195,
+        "model": "beers.beer",
+        "fields": {
+            "name": "De Koninck Amber Draft",
+            "slug": "de-koninck-amber-draft"
+        }
+    },
+    {
+        "pk": 225,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "De Koninck Amber Draft, by Sam, alias Nostradammit - CC-BY-SA",
+            "beer": 195,
+            "picture": "beers/de-koninck-amber-draft.jpg",
+            "upload_date": "2014-03-31 22:56:00"
+        }
     }
 ]
