@@ -3682,5 +3682,23 @@
             "picture": "beers/levrette-bio.jpg",
             "upload_date": "2013-02-15 23:05:00"
         }
+    },
+    {
+        "pk": 189,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Hercule",
+            "slug": "hercule"
+        }
+    },
+   {
+        "pk": 219,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Hercule, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 189,
+            "picture": "beers/hercule.jpg",
+            "upload_date": "2014-03-31 22:09:00"
+        }
     }
 ]
