@@ -3718,5 +3718,23 @@
             "picture": "beers/kasteel-rouge.jpg",
             "upload_date": "2014-03-31 22:19:00"
         }
+    },
+    {
+        "pk": 191,
+        "model": "beers.beer",
+        "fields": {
+            "name": "St Pierre Myrtille",
+            "slug": "st-pierre-myrtille"
+        }
+    },
+   {
+        "pk": 221,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "St Pierre Myrtille, by Jean-Michel Armand - CC-BY-SA",
+            "beer": 191,
+            "picture": "beers/st-pierre-myrtille.jpg",
+            "upload_date": "2014-03-31 22:24:00"
+        }
     }
 ]
