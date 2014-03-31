@@ -3754,5 +3754,23 @@
             "picture": "beers/hop-devil-ipa.jpg",
             "upload_date": "2014-03-31 22:33:00"
         }
+    },
+    {
+        "pk": 193,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Corsendonk Blonde",
+            "slug": "corsendonk-blonde"
+        }
+    },
+    {
+        "pk": 223,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Corsendonk Blonde, by Sam, alias Nostradammit - CC-BY-SA",
+            "beer": 193,
+            "picture": "beers/corsendonk-blonde.jpg",
+            "upload_date": "2014-03-31 22:49:00"
+        }
     }
 ]
