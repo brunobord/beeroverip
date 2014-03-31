@@ -3772,5 +3772,23 @@
             "picture": "beers/corsendonk-blonde.jpg",
             "upload_date": "2014-03-31 22:49:00"
         }
+    },
+    {
+        "pk": 194,
+        "model": "beers.beer",
+        "fields": {
+            "name": "Corsendonk Brune",
+            "slug": "corsendonk-brune"
+        }
+    },
+    {
+        "pk": 224,
+        "model": "beers.beerimage",
+        "fields": {
+            "credits": "Corsendonk Brune, by Sam, alias Nostradammit - CC-BY-SA",
+            "beer": 194,
+            "picture": "beers/corsendonk-brune.jpg",
+            "upload_date": "2014-03-31 22:52:00"
+        }
     }
 ]
