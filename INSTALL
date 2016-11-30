@@ -3,8 +3,7 @@ How to install BeerOverIP
 =========================
 
 At the moment, Beer Over IP is written for Django 0.96, which was the latest
-stable release at the time the project was started. Migration onto Django 1.0
-is planned, but not yet.
+stable release at the time the project was started. Migration onto more recent Django versions is planned, but not yet.
 
 Setup a Django app
 ==================
@@ -21,9 +20,9 @@ Checking out beeroverip code
 
 Inside your project, type the command::
 
-    $ bzr branch lp:beeroverip beers
+    $ git clone git@github.com:brunobord/beeroverip.git beers
 
-This should download the `beers` code from trunk.
+This should download the `beers` code from master.
 
 Change settings
 ---------------

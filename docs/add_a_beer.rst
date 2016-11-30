@@ -77,8 +77,7 @@ Commit your changes:
 .. code-block: bash
 
     $ cd /path/to/application/beers
-    $ bzr add
-    $ bzr commit -m "with a nice commit message"
+    $ git add .
+    $ git commit -a -m "with a nice commit message"
 
-You may enventually push your changes to Launchpad, if you have a write access
-to a branch.
+You can push your changes on your own fork on Github, and create a pull-request.

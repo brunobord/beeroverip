@@ -7,58 +7,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-28 20:59+0200\n"
-"PO-Revision-Date: 2010-04-28 21:06+0100\n"
-"Last-Translator: Bruno Bord\n"
+"POT-Creation-Date: 2016-11-30 22:51+0100\n"
+"PO-Revision-Date: 2016-11-30 22:53+0100\n"
+"Last-Translator: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
+"X-Generator: Poedit 1.6.10\n"
 
-#: flows.py:7
+#: flows.py:8
 msgid "Beer flow, latest"
 msgstr "Dernières bières dans le flux"
 
-#: flows.py:9
+#: flows.py:10
 msgid "Latest Beers available for IP Transport"
 msgstr "Voici les dernières bières proposées pour le transport via IP"
 
-#: models.py:15
+#: models.py:13
 msgid "name"
 msgstr "nom"
 
-#: models.py:16
+#: models.py:14
 msgid "slug"
 msgstr "slug"
 
-#: models.py:37
+#: models.py:34
 msgid "beer"
 msgstr "bière"
 
-#: models.py:38
+#: models.py:35
 msgid "beers"
 msgstr "bières"
 
-#: models.py:50
+#: models.py:47
 msgid "drink"
 msgstr "boisson"
 
-#: models.py:51
+#: models.py:48
 msgid "drinks"
 msgstr "boissons"
 
-#: models.py:68
+#: models.py:65
 msgid "credits"
 msgstr "crédits"
 
-#: models.py:69
+#: models.py:66
 msgid "upload date"
 msgstr "date d'ajout"
 
-#: models.py:87
-#: models.py:97
+#: models.py:84 models.py:94
 msgid "picture"
 msgstr "image"
 
@@ -66,11 +65,9 @@ msgstr "image"
 msgid "Beer not found..."
 msgstr "Bière introuvable..."
 
-#: templates/404.html:9
-#: templates/beers/beer_detail.html:16
+#: templates/404.html:9 templates/beers/beer_detail.html:16
 #: templates/drinks/drink_detail.html:13
-#: templates/feeds/beers_description.html:7
-#: templates/pages/ascii.html:26
+#: templates/feeds/beers_description.html:7 templates/pages/ascii.html:26
 msgid "Credits:"
 msgstr "Crédits :"
 
@@ -78,8 +75,7 @@ msgstr "Crédits :"
 msgid "Beer Flow"
 msgstr "Flux de Bières"
 
-#: templates/default.html:53
-#: templates/default_drink.html:7
+#: templates/default.html:53 templates/default_drink.html:7
 #: templates/pages/about.html:5
 msgid "About"
 msgstr "À propos"
@@ -88,8 +84,7 @@ msgstr "À propos"
 msgid "List of all beers available"
 msgstr "Liste de toutes les bières disponibles"
 
-#: templates/default.html:55
-#: templates/beers/beer_list.html:23
+#: templates/default.html:55 templates/beers/beer_list.html:23
 #: templates/drinks/drink_list.html:12
 msgid "Random"
 msgstr "Aléatoire"
@@ -99,20 +94,40 @@ msgid "Drink"
 msgstr "Boisson"
 
 #: templates/default.html:60
-msgid "Pictures are property of their authors, and are usually published under a Creative Commons License."
-msgstr "Les images sont la propriété de leurs auteurs, et sont généralement publiée sous contrat Creative Commons."
+msgid ""
+"Pictures are property of their authors, and are usually published under a "
+"Creative Commons License."
+msgstr ""
+"Les images sont la propriété de leurs auteurs, et sont généralement publiée "
+"sous contrat Creative Commons."
 
 #: templates/default.html:60
 msgid "Powered by BeerOverIp"
 msgstr "Propulsé par BeerOverIP"
 
 #: templates/default.html:65
-msgid "<strong>SERIOUS WARNING:</strong> This website is not about getting pissed. It's just about sending virtual beers to people you like or you want to thank. Please, please don't drink and drive. Please, please don't destroy your brain cells by drinking too much. Please, please, prefer having only one fine beer rather than a dozen pints of cheap donkey piss. Many thanks."
-msgstr "<strong>AVERTISSEMENT SÉRIEUX :</strong> Ce site internet n'est pas destiné à te mettre minable ou à faire l'apologie de la murge. Il s'agit simplement d'envoyer des bières virtuelles aux gens que tu apprécies ou que tu veux remercier. S'il te plaît, je t'en prie, ne conduis pas bourré. S'il te plaît, je t'en prie, ne détruis pas tes neurones en abusant de la boisson. S'il te plaît, je t'en prie, choisis plutôt une seule bonne bière plutôt qu'une dizaine de bouteilles de pisse d'âne pas chères. Merci bien."
+msgid ""
+"<strong>SERIOUS WARNING:</strong> This website is not about getting pissed. "
+"It's just about sending virtual beers to people you like or you want to "
+"thank. Please, please don't drink and drive. Please, please don't destroy "
+"your brain cells by drinking too much. Please, please, prefer having only "
+"one fine beer rather than a dozen pints of cheap donkey piss. Many thanks."
+msgstr ""
+"<strong>AVERTISSEMENT SÉRIEUX :</strong> Ce site internet n'est pas destiné "
+"à te mettre minable ou à faire l'apologie de la murge. Il s'agit simplement "
+"d'envoyer des bières virtuelles aux gens que tu apprécies ou que tu veux "
+"remercier. S'il te plaît, je t'en prie, ne conduis pas bourré. S'il te "
+"plaît, je t'en prie, ne détruis pas tes neurones en abusant de la boisson. "
+"S'il te plaît, je t'en prie, choisis plutôt une seule bonne bière plutôt "
+"qu'une dizaine de bouteilles de pisse d'âne pas chères. Merci bien."
 
 #: templates/default.html:68
-msgid "You may find very valuable advice by visiting the <a href=\"http://www.drinkaware.co.uk/\">Drink Aware</a> website."
-msgstr "Tu peux trouver de bien plus amples informations en allant sur le site <a href=\"http://www.boiretrop.fr/\">Boire Trop</a> (flash requis)."
+msgid ""
+"You may find very valuable advice by visiting the <a href=\"http://www."
+"drinkaware.co.uk/\">Drink Aware</a> website."
+msgstr ""
+"Tu peux trouver de bien plus amples informations en allant sur le site <a "
+"href=\"http://www.boiretrop.fr/\">Boire Trop</a> (flash requis)."
 
 #: templates/default_drink.html:6
 msgid "Beer"
@@ -126,8 +141,7 @@ msgstr "Liste des boissons disponibles"
 msgid "Random Drink"
 msgstr "Boisson aléatoire"
 
-#: templates/beers/beer_detail.html:8
-#: templates/drinks/drink_detail.html:8
+#: templates/beers/beer_detail.html:8 templates/drinks/drink_detail.html:8
 #: templates/pages/ascii.html:8
 msgid "You've just been offered..."
 msgstr "On vient de t'offrir..."
@@ -146,13 +160,11 @@ msgstr "ou plus précisément: <em>%(beer)s</em>"
 msgid "A permalink to \"%(beer)s\""
 msgstr "Un lien permanent vers \"%(beer)s\""
 
-#: templates/beers/beer_list.html:4
-#: templates/beers/beer_list.html.py:7
+#: templates/beers/beer_list.html:4 templates/beers/beer_list.html.py:7
 msgid "The beer list"
 msgstr "Liste des bières"
 
-#: templates/beers/beer_list.html:21
-#: templates/drinks/drink_list.html:12
+#: templates/beers/beer_list.html:21 templates/drinks/drink_list.html:12
 msgid "Special feature:"
 msgstr "Spécial :"
 
@@ -165,8 +177,7 @@ msgstr "une <del>Bière</del>Boisson Sur IP"
 msgid "more precisely: <em>%(drink)s</em>"
 msgstr "ou plus précisément: <em>%(drink)s</em>"
 
-#: templates/drinks/drink_list.html:4
-#: templates/drinks/drink_list.html.py:7
+#: templates/drinks/drink_list.html:4 templates/drinks/drink_list.html.py:7
 msgid "The drink list"
 msgstr "Liste des boissons"
 
@@ -180,24 +191,43 @@ msgid "more precisely: <em>%(obj)s</em>"
 msgstr "ou plus précisément: <em>%(obj)s</em>"
 
 #: templates/pages/about.html:7
-msgid "Beer Over IP is the simplest and easiest way to send a beer to someone over the IP protocol."
-msgstr "Beer Over Ip est le moyen le plus simple et le plus efficace pour envoyer une bière à quelqu'un en utilisant le protocole IP."
+msgid ""
+"Beer Over IP is the simplest and easiest way to send a beer to someone over "
+"the IP protocol."
+msgstr ""
+"Beer Over Ip est le moyen le plus simple et le plus efficace pour envoyer "
+"une bière à quelqu'un en utilisant le protocole IP."
 
 #: templates/pages/about.html:10
 msgid "How to use it?"
 msgstr "Comment l'utiliser ?"
 
 #: templates/pages/about.html:11
-msgid "it's as simple as giving someone a link to the main <a href=\"http://beeroverip.org\">Beer over IP website</a>. Your \"target\" clicks on it and he or she gets instant reward!"
-msgstr "c'est aussi simple que de donner un lien vers <a href=\"http://beeroverip.org/\">site Beer Over IP</a>. Votre \"cible\" clique sur le lien et hop ! Il ou elle reçoit immédiatement sa récompense !"
+msgid ""
+"it's as simple as giving someone a link to the main <a href=\"http://"
+"beeroverip.org\">Beer over IP website</a>. Your \"target\" clicks on it and "
+"he or she gets instant reward!"
+msgstr ""
+"c'est aussi simple que de donner un lien vers <a href=\"http://beeroverip."
+"org/\">site Beer Over IP</a>. Votre \"cible\" clique sur le lien et hop ! Il "
+"ou elle reçoit immédiatement sa récompense !"
 
 #: templates/pages/about.html:14
 msgid "The default beer is nice, but ain't there any other?"
 msgstr "La bière par défaut est bonne, mais y en a-t-il d'autres ?"
 
 #: templates/pages/about.html:15
-msgid "Of course! Just go to <a href=\"http://beeroverip.org/all/\">the global list of beers</a> and pick up the one you want to send over IP. You'll get a link to a specific beer that fits your needs. Hence you may send <a href=\"http://beeroverip.org/stout/\">stout to someone!</a>"
-msgstr "Bien entendu ! Il vous suffit d'aller sur <a href=\"http://beeroverip.org/all/\">la liste complète des bières</a> et de choisir celle que vous voulez envoyer via le protocole IP. Vous pourrez obtenir un lien vers la bière qui vous convient. Ainsi, vous pouvez envoyer <a href=\"http://beeroverip.org/stout/\">une stout</a> à quelqu'un !"
+msgid ""
+"Of course! Just go to <a href=\"http://beeroverip.org/all/\">the global list "
+"of beers</a> and pick up the one you want to send over IP. You'll get a link "
+"to a specific beer that fits your needs. Hence you may send <a href=\"http://"
+"beeroverip.org/stout/\">stout to someone!</a>"
+msgstr ""
+"Bien entendu ! Il vous suffit d'aller sur <a href=\"http://beeroverip.org/"
+"all/\">la liste complète des bières</a> et de choisir celle que vous voulez "
+"envoyer via le protocole IP. Vous pourrez obtenir un lien vers la bière qui "
+"vous convient. Ainsi, vous pouvez envoyer <a href=\"http://beeroverip.org/"
+"stout/\">une stout</a> à quelqu'un !"
 
 #: templates/pages/about.html:17
 msgid "Ain't it cool?"
@@ -208,8 +238,17 @@ msgid "I can't find my favorite beer!"
 msgstr "Je ne trouve pas ma bière préférée !"
 
 #: templates/pages/about.html:21
-msgid "Unfortunately, this website is not a beer anthology (yet). But you could help it by hunting for a Free (as in speech) picture of a beer (Flickr has tons of them) on the web, or take one picture by yourself, and publish it under a Creative Commons License. Once you have:"
-msgstr "Malheureusement, ce site n'est pas (encore) une anthologie de la bière. Mais vous pouvez nous aider en partant à la chasse d'une bière dont l'image est libre de droit (Flickr en a des tas) sur le web, ou vous pouvez prendre la photo vous-même, et la publier sous un contrat Creative Commons, par exemple. Une fois que vous avez :"
+msgid ""
+"Unfortunately, this website is not a beer anthology (yet). But you could "
+"help it by hunting for a Free (as in speech) picture of a beer (Flickr has "
+"tons of them) on the web, or take one picture by yourself, and publish it "
+"under a Creative Commons License. Once you have:"
+msgstr ""
+"Malheureusement, ce site n'est pas (encore) une anthologie de la bière. Mais "
+"vous pouvez nous aider en partant à la chasse d'une bière dont l'image est "
+"libre de droit (Flickr en a des tas) sur le web, ou vous pouvez prendre la "
+"photo vous-même, et la publier sous un contrat Creative Commons, par "
+"exemple. Une fois que vous avez :"
 
 #: templates/pages/about.html:24
 msgid "the name of the sort of beer,"
@@ -224,12 +263,25 @@ msgid "a description, and the terms of the license,"
 msgstr "une description, les termes d'utilisation,"
 
 #: templates/pages/about.html:28
-msgid "go straight to <a href=\"https://bugs.launchpad.net/beeroverip/\">the BeerOverIP bug interface</a> and file a bug. The title may be: \"new beer: [this sort of beer] could be added to the list\". You may proceed by sending links to the picture and texts, or attach files in the bug report."
-msgstr "allez droit sur <a href=\"https://bugs.launchpad.net/beeroverip/\">l'interface de bug de BeerOverIP</a> sur launchpad et adressez un bug. Le titre peut ressembler à : \"nouvelle bière : [cette sorte de bière] pourrait être ajoutée\". Vous pouvez ensuite envoyer un lien vers l'image et ses informations, ou attacher le fichier image sur le rapport de bug en question."
+msgid ""
+"go straight to <a href=\"https://github.com/brunobord/beeroverip/issues"
+"\">the BeerOverIP bug interface</a> and file a bug. The title may be: \"new "
+"beer: [this sort of beer] could be added to the list\". You may proceed by "
+"sending links to the picture and texts, or attach files in the bug report."
+msgstr ""
+"allez droit sur <a href=\"https://github.com/brunobord/beeroverip/issues/"
+"\">l'interface de bug de BeerOverIP</a> sur github et créez une issue. Le "
+"titre peut ressembler à : \"nouvelle bière : [cette sorte de bière] pourrait "
+"être ajoutée\". Vous pouvez ensuite envoyer un lien vers l'image et ses "
+"informations, ou attacher le fichier image sur le rapport de bug en question."
 
 #: templates/pages/about.html:30
-msgid "If your new beer is a nice candidate and fits the right criteria, it may be added to our database as soon as possible."
-msgstr "Si votre nouvelle bière est une candidate acceptable, elle sera ajoutée à la base de données aussi vite que possible."
+msgid ""
+"If your new beer is a nice candidate and fits the right criteria, it may be "
+"added to our database as soon as possible."
+msgstr ""
+"Si votre nouvelle bière est une candidate acceptable, elle sera ajoutée à la "
+"base de données aussi vite que possible."
 
 #: templates/pages/ascii.html:22
 msgid "an ASCII Beer over IP"
@@ -241,10 +293,10 @@ msgstr "Un lien permanent vers \"ASCII BEER\""
 
 #~ msgid "NEW!"
 #~ msgstr "NOUVEAU !"
+
 #~ msgid ""
 #~ "If you don't want a beer, just <a href=\"%(drink_detail_url)s\">offer a "
 #~ "regular drink!</a>"
 #~ msgstr ""
-#~ "Si tu ne veux pas de bière, tu peux toujours <a href=\"%(drink_detail_url)"
-#~ "s\">offrir une boisson d'un autre genre !</a>"
-
+#~ "Si tu ne veux pas de bière, tu peux toujours <a href="
+#~ "\"%(drink_detail_url)s\">offrir une boisson d'un autre genre !</a>"
