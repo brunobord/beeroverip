@@ -1,17 +1,10 @@
-.. A quick document about the different styles of beer.
+# About Beer Styles
 
-=================
-About Beer Styles
-=================
-
-(source: Wikipedia_)
-
-.. _Wikipedia: http://en.wikipedia.org/wiki/Beer_style
+(source: [Wikipedia](http://en.wikipedia.org/wiki/Beer_style))
 
 By alphabetical order
 
-British beer
-============
+## British beer
 
 * Barley wine (strong ale)
 * Bitter (pale ale)
@@ -22,8 +15,7 @@ British beer
 * Porter (stout)
 * Stout
 
-Belgian beer
-============
+## Belgian beer
 
 * Dubbel (double)
 * Enkel (single)
@@ -34,8 +26,7 @@ Belgian beer
 * Tripel (triple, strong ale)
 * Witbier (top fermented)
 
-German beer
-===========
+## German beer
 
 * Altbier (top fermented)
 * Berliner Weisse (wheat beer)
@@ -50,8 +41,7 @@ German beer
 * Smoked beer
 * Wheat beer (top fermented)
 
-American beer
-=============
+## American beer
 
 * Amber ale (pale ale)
 * American pale ale
@@ -59,8 +49,7 @@ American beer
 * Cream ale
 * Steam beer (bottom fermenting)
 
-Other
-=====
+## Other
 
 * Baltic porter (stout, around the Baltic Sea)
 * Bière de Garde (keeping beer, Northern France)
