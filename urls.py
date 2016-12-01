@@ -7,8 +7,11 @@ from flows import BeerFlow
 flows = {
     'beers': BeerFlow,
 }
-urlpatterns = patterns('',
-    url(r'^flow/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': flows}),
+urlpatterns = patterns(
+    '', url(
+        r'^flow/(?P<url>.*)/$',
+        'django.contrib.syndication.views.feed', {'feed_dict': flows}
+    ),
 )
 
 # About page
@@ -18,7 +21,8 @@ about_dict = {
 ascii_dict = {
     'template': 'pages/ascii.html',
 }
-urlpatterns += patterns('django.views.generic.simple',
+urlpatterns += patterns(
+    'django.views.generic.simple',
     url(r'^about/', 'direct_to_template', about_dict, name='about'),
     url(r'^ascii/', 'direct_to_template', ascii_dict, name='ascii'),
 )
@@ -26,12 +30,13 @@ urlpatterns += patterns('django.views.generic.simple',
 beer_dict = {
     'queryset': Beer.objects.order_by('name'),
 }
-urlpatterns += patterns('django.views.generic.list_detail',
+urlpatterns += patterns(
+    'django.views.generic.list_detail',
     url(r'^all/', 'object_list', beer_dict, name="beer_list"),
 )
 
-urlpatterns += patterns('beers.views',
-
+urlpatterns += patterns(
+    'beers.views',
     # not a beer
     url(r'^notabeer/all/', 'drink_list', name='drink_list'),
     url(r'^notabeer/random/', 'drink_random', name='drink_random'),
