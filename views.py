@@ -1,5 +1,4 @@
 from django.http import Http404
-#from django.conf import settings
 from django.views.generic.simple import direct_to_template
 from django.views.generic.list_detail import object_list
 from beers.models import Beer, NotABeer
@@ -13,7 +12,8 @@ def beer_detail(request, slug=None):
     except:
         raise Http404
 
-    return direct_to_template(request,
+    return direct_to_template(
+        request,
         template='beers/beer_detail.html',
         extra_context={
             'beer': beer,
@@ -42,7 +42,8 @@ def drink_detail(request, slug=None):
     except:
         raise Http404
 
-    return direct_to_template(request,
+    return direct_to_template(
+        request,
         template='drinks/drink_detail.html',
         extra_context={
             'drink': drink,
@@ -52,7 +53,8 @@ def drink_detail(request, slug=None):
 
 
 def drink_list(request):
-    return object_list(request,
+    return object_list(
+        request,
         queryset=NotABeer.objects.order_by('name'),
         template_name='drinks/drink_list.html',
     )
