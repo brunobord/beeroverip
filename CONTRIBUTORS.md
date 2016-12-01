@@ -1,5 +1,4 @@
-List of the Contributors to this Project
-========================================
+# List of the Contributors to this Project
 
 (Those who sent pictures of beers they liked)
 
