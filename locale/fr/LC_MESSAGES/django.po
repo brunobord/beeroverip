@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beer Over IP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-30 22:51+0100\n"
-"PO-Revision-Date: 2016-11-30 22:53+0100\n"
+"POT-Creation-Date: 2016-12-01 23:09+0100\n"
+"PO-Revision-Date: 2016-12-01 23:09+0100\n"
 "Last-Translator: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "Language-Team: Bruno Bord <bruno@jehaisleprintemps.net>\n"
 "Language: fr_FR\n"
@@ -53,11 +53,11 @@ msgstr "boissons"
 msgid "credits"
 msgstr "crédits"
 
-#: models.py:66
+#: models.py:67
 msgid "upload date"
 msgstr "date d'ajout"
 
-#: models.py:84 models.py:94
+#: models.py:84 models.py:95
 msgid "picture"
 msgstr "image"
 
@@ -204,11 +204,11 @@ msgstr "Comment l'utiliser ?"
 
 #: templates/pages/about.html:11
 msgid ""
-"it's as simple as giving someone a link to the main <a href=\"http://"
+"it's as simple as giving someone a link to the main <a href=\"https://"
 "beeroverip.org\">Beer over IP website</a>. Your \"target\" clicks on it and "
 "he or she gets instant reward!"
 msgstr ""
-"c'est aussi simple que de donner un lien vers <a href=\"http://beeroverip."
+"c'est aussi simple que de donner un lien vers <a href=\"https://beeroverip."
 "org/\">site Beer Over IP</a>. Votre \"cible\" clique sur le lien et hop ! Il "
 "ou elle reçoit immédiatement sa récompense !"
 
@@ -218,15 +218,15 @@ msgstr "La bière par défaut est bonne, mais y en a-t-il d'autres ?"
 
 #: templates/pages/about.html:15
 msgid ""
-"Of course! Just go to <a href=\"http://beeroverip.org/all/\">the global list "
-"of beers</a> and pick up the one you want to send over IP. You'll get a link "
-"to a specific beer that fits your needs. Hence you may send <a href=\"http://"
-"beeroverip.org/stout/\">stout to someone!</a>"
+"Of course! Just go to <a href=\"https://beeroverip.org/all/\">the global "
+"list of beers</a> and pick up the one you want to send over IP. You'll get a "
+"link to a specific beer that fits your needs. Hence you may send <a href="
+"\"https://beeroverip.org/stout/\">stout to someone!</a>"
 msgstr ""
-"Bien entendu ! Il vous suffit d'aller sur <a href=\"http://beeroverip.org/"
+"Bien entendu ! Il vous suffit d'aller sur <a href=\"https://beeroverip.org/"
 "all/\">la liste complète des bières</a> et de choisir celle que vous voulez "
 "envoyer via le protocole IP. Vous pourrez obtenir un lien vers la bière qui "
-"vous convient. Ainsi, vous pouvez envoyer <a href=\"http://beeroverip.org/"
+"vous convient. Ainsi, vous pouvez envoyer <a href=\"https://beeroverip.org/"
 "stout/\">une stout</a> à quelqu'un !"
 
 #: templates/pages/about.html:17

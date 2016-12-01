@@ -19,15 +19,15 @@ See WTFPL and BEERWARE files for further information or go to:
 
 ## How to use it?
 
-Just make a link to http://beeroverip.org and it's done. The person you are offering the beer to can click on the link and gets instant satisfaction!
+Just make a link to https://beeroverip.org and it's done. The person you are offering the beer to can click on the link and gets instant satisfaction!
 
 > Can we have anything more interesting? like... $FAVORITE_TYPE_OF_BEER?
 
-Yes! You can! Check the http://beeroverip.org/all/ list of the available beers and you may send the appropriate URL to the person you want to hand a virtual beer.
+Yes! You can! Check the https://beeroverip.org/all/ list of the available beers and you may send the appropriate URL to the person you want to hand a virtual beer.
 
 ### And what if I don't like beer?
 
-You can still use this website by sending non-beer beverage. Just point to http://beeroverip/notabeer/ to send a coffee, for example. The list of all our non-beer drinks are available at http://beeroverip.org/notabeer/all/
+You can still use this website by sending non-beer beverage. Just point to https://beeroverip/notabeer/ to send a coffee, for example. The list of all our non-beer drinks are available at https://beeroverip.org/notabeer/all/
 
 And if you miss a drink you would like to send, you may help the same way (see the `about` page)
 
