@@ -63,8 +63,8 @@ class DrinkImage(models.Model):
     * `upload_date`: the date/time the beer has been uploaded.
     """
     credits = models.TextField(_('credits'), blank=True)
-    upload_date = models.DateTimeField(_('upload date'),
-        default=datetime.datetime.now)
+    upload_date = models.DateTimeField(
+        _('upload date'), default=datetime.datetime.now)
 
     class Meta:
         abstract = True
@@ -91,6 +91,5 @@ class NotABeerImage(DrinkImage):
     * `picture`: image field (requires PIL module).
     """
     notabeer = models.ForeignKey(NotABeer)
-    picture = models.ImageField(_('picture'), upload_to='notabeers/', blank=True)
-
-# EOF
+    picture = models.ImageField(
+        _('picture'), upload_to='notabeers/', blank=True)

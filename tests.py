@@ -1,15 +1,16 @@
 import os
 
 import logging
-logging.basicConfig(level=logging.CRITICAL)
 
 from django.utils import simplejson
 from django.core.urlresolvers import reverse
 from django.test import TestCase
-# from django.test.client import Client
 from django.conf import settings
 from models import Beer, NotABeer
 from models import BeerImage, NotABeerImage
+
+
+logging.basicConfig(level=logging.CRITICAL)
 
 
 class TestSettings(TestCase):
@@ -17,7 +18,10 @@ class TestSettings(TestCase):
 
     def test_context_processors(self):
         """Let's make sure our context processors are okay."""
-        self.assertTrue('beers.context_processors.analytics_id' in settings.TEMPLATE_CONTEXT_PROCESSORS)
+        self.assertIn(
+            'beers.context_processors.analytics_id',
+            settings.TEMPLATE_CONTEXT_PROCESSORS
+        )
 
 
 class TestBeerData(TestCase):
@@ -32,7 +36,9 @@ class TestBeerData(TestCase):
     def test_no_duplicate_slug(self):
         """Seek for unwanted slug duplicates"""
         count = Beer.objects.count()
-        slugs = set([slug[0] for slug in Beer.objects.all().values_list('slug')])
+        slugs = set([
+            slug[0] for slug in Beer.objects.all().values_list('slug')
+        ])
         self.assertEquals(len(slugs), count)
 
 
@@ -63,7 +69,7 @@ class TestBeerUrls(TestCase):
             response = self.client.get(beer.get_absolute_url())
             if response.status_code != 200:
                 # For debug purposes.
-                print beer
+                print(beer)
             self.assertEquals(response.status_code, 200)
 
     def test_random(self):
@@ -111,14 +117,18 @@ class TestMediaFiles(TestCase):
 
     def test_image_size(self):
         for image in BeerImage.objects.all():
-            self.assertTrue(max(image.picture.height, image.picture.width) <= 500)
+            self.assertTrue(
+                max(image.picture.height, image.picture.width) <= 500
+            )
 
     def test_file_is_in_images(self):
         beer_image_path = os.path.join(settings.MEDIA_ROOT, 'beers')
         for filename in os.listdir(beer_image_path):
             if filename not in ('404.jpg', ):
                 logging.debug(filename)
-                self.assertTrue(BeerImage.objects.get(picture='beers/%s' % filename))
+                self.assertTrue(
+                    BeerImage.objects.get(picture='beers/%s' % filename)
+                )
 
 
 class TestNotABeerUrls(TestCase):
@@ -145,7 +155,7 @@ class TestNotABeerUrls(TestCase):
             self.assertEquals(response.status_code, 200)
 
     def test_media_file_not_found(self):
-        """If any drink picture file is unknown/missing, it must be an error."""
+        "If any drink picture file is unknown/missing, it must be an error."
         random_image = NotABeerImage.objects.get(pk=1)
         random_image.picture = 'unknown/file.jpg'
         random_image.save()
@@ -158,18 +168,13 @@ class TestNotABeerUrls(TestCase):
             response = self.client.get(drink.get_absolute_url())
             if response.status_code != 200:
                 # For debug purposes.
-                print drink
+                print(drink)
             self.assertEquals(response.status_code, 200)
 
     def test_random(self):
         """The random view should return a drink view"""
         response = self.client.get(reverse('drink_random'))
         self.assertEquals(response.status_code, 200)
-
-##    def test_rss_flow(self):
-##        """Testing the RSS flow"""
-##        response = self.client.get('/flow/drinks/')
-##        self.assertEquals(response.status_code, 200)
 
     def test_url_all(self):
         """Testing '/all/' url"""
@@ -199,7 +204,8 @@ class TestFixture(TestCase):
     def test_look_for_beer_duplicate(self):
         filename = os.path.join(self.fixture_dir, 'data.json')
         data = simplejson.load(open(filename))
-        raw_keys = [item['pk'] for item in data if item['model'] == 'beers.beer']
+        raw_keys = [item['pk'] for item in data
+                    if item['model'] == 'beers.beer']
         to_check = []
         try:
             for k in raw_keys:
